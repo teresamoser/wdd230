@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD230 - Portal - Teresa Moser</title>
-    <meta
-        name="description"
-        content="WDD230 course assignment protal page that will be used
+    <meta name="description" content="WDD230 course assignment portal page that will be used
         throughout for the assignments of Teresa Moser." />
     <meta name="author" content="Teresa Moser" />
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+      <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg><br>
+         <a href="https://linkedin.com/in/teresa-moser-288794b7"> Linkedin </a><br>
+         <a href="https://my.byui.edu/ICS/"> BYU-Idaho</a><br>
+      </nav>   
+      <header>
+        <h1 contenteditable>Teresa Moser</h1>
+        <img src="images/Teresa 1.jpg" alt="Teresa's pix" width="125" height="150"/>
+      </header>
+
+      <main contenteditable width="760px" viewport="center">WDD 230: Course Activity Portal
+        <section class="card">
+        <h3>Learning Activities</h3> 
+        <ul>
+            <il></il>
+                <a></a> <!---for learning activities that will be populated throughout-->
+            <il></il>
+                <a></a><!---for learning activities that will be populated throughout-->
+
+        </ul>
+        </section>
+
+        <section class="card">
+            <h3>Project</h3>
+            <a></a><!--- tag that links to the future chamber project folder.-->
+
+        </section> 
+
+        <section class="card">
+            <h3>Information</h3>
+            <!---Information placeholders about the weather, 
+                number of visits to the page, etc. You do not need to 
+                program this functionality yet.-->
+
+        </section> 
+
+        </main>
+
+      <footer contenteditable>
+        <p> &copy;
+             <script>document.write(new Date().getFullYear())</script>
+              Teresa Moser  United States
+        </p>
+
+        <p class="highlight" id="lastModified">
+            <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("lastModified").innerHTML = date; 
+            </script>
+        </p>
+
+      </footer>
     
 </body>
 </html>
