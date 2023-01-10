@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Site Plan Document</title>
+    <meta name="description" content="This is my rough draft of the Chamber site plan. 
+        I will be updating this page throughout this course." />
+    <meta name="author" content="Teresa Moser" />
+    <link rel="stylesheet" href="styles/chamber-site-plan-base.css">
+    <link rel="stylesheet" href="styles/chamber-site-plan-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg><br>
+      </nav> 
+        
+      <header>
+        <h1 contenteditable>Rigby Chamber of Commerce</h1>
+        <img src="images/Early-Rigby-photo.jpeg" alt="Old Time Photo of Rigby" width="250" height="300"/>
+      </header>
+
+      <main contenteditable width="760px" viewport="center">
+
+        <section class="Site">
+            <h3>Site Purpose</h3>
+            <p>The site purpose will explain the regional economic community and leadership.<br>
+                It will also promote the local businesses and be a source for the community 
+                to gain information about any events, news, and weather.
+                <!---To be radified-->
+            </p>
+        </section> 
+
+        <section class="Scenarios">
+            <h3>Scenarios</h3>
+            <p>This is where the viewer can find information about the chamber's board of directors,
+                the population growth, and chamber meetings.
+            </p>
+
+        </section> 
+        <section class="Color">
+            <h3>Color Schema</h3>
+            <p> I have chosen two palettes. A bold color palette, and a softer palette.<br>
+                Bold:  0A0908 RICH BLACK, 49111C DARK SIENNA, F2F4F3 CULTURED, A9927D GRULLO, 5E503F UMBER<br>
+                Soft; C9CEBD ASH GRAY, B2BCAA ASH GRAY, 838E83 XANADU, 6C601 GRANITE GRAY<br>
+                I will try out these color schemes to see which would best fit the web page.
+            </p>
+
+
+        </section> 
+        <section class="Typography">
+            <h3>Typography</h3>
+            <p>I have chosen three fonts. <br>
+                <link href="https://fonts.googleapis.com/css2?family=Scope One&display=swap" rel="stylesheet"> Scope One<br>
+                <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet"> Alegreya<br>
+                <link href="https://fonts.googleapis.com/css2?family=Work Sans&display=swap" rel="stylesheet">Work Sans
+            </p>
+        </section> 
+        <section class="Wireframe">
+            <h3>Wireframe</h3>
+            <p>A rough draft of the web page would be the main landing page that 
+                be the whole view.<br>
+                Scroll down to the different divisions,possibly 3 boxes across the page.<br>
+                Then there would be a footer with all the information of the webpage. <br>
+                There will be links to other pages included on the landing page.
+            </p>
+        </section> 
+        </main>
+
+      <footer contenteditable>
+        <p> &copy;
+             <script>document.write(new Date().getFullYear())</script>
+              Rigby Chamber Of Commerce<br>
+               United States of America
+        </p>
+
+        <p class="highlight" id="lastModified">
+            <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("lastModified").innerHTML = date; 
+            </script>
+        </p>
+
+      </footer>
     
 </body>
 </html>
