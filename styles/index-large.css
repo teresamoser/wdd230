@@ -1,18 +1,29 @@
 @media only screen and (min-width: 600px){
 
-   nav{
-        background-color: rgb(96, 40, 92);
-        color: rgb(225, 217, 217);
-        padding: 1rem;
-        border: 1rem;
+   nav {
+        overflow: hidden;
+        background-color: rgb(161, 121, 121);
+        width: auto;
+        height: 100px;
     }
-    a {
-        color:rgb(225, 217, 217);
+    nav a {
+        color: rgb(236, 225, 195);
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
     }
-    main{
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        
+    nav svg {
+        color: rgb(236, 225, 195);
+        float: left;
+        display: block;
+        text-align: center;
     }
+
+    main {
+        grid-template-columns: 2;
+        column-gap: 10px;   
+    }
+    
     
 }
