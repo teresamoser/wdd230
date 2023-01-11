@@ -1,25 +1,26 @@
 * {
     box-sizing: border-box;
   }
-  a:active {
-    color: white;
+  a {
+    color: beige;
   }
   nav {        
     background-color: rgb(245, 165, 242);
-    color: white;
     padding: 1rem;
     border: 1rem;
   }
 
   header {
     background: rgb(69, 41, 73);
+    color: beige;
     padding: 2rem;
     grid-column: 1;
   }
 
    main {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+  	display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 1rem;
   }
 
   section {
