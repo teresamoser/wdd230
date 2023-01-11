@@ -2,16 +2,16 @@
     box-sizing: border-box;
   }
   a {
-    color: rgb(7, 7, 7);
+    color: rgb(111, 231, 157);
   }
   nav {        
-    background-color: rgb(14, 74, 37);
+    background-color: rgb(74, 106, 86);
     padding: 1rem;
     border: 1rem;
   }
 
   header {
-    background: rgb(69, 41, 73);
+    background: rgb(79, 43, 84);
     color: beige;
     padding: 2rem;
     grid-column: 1;
@@ -35,7 +35,7 @@
   }
 
   footer {
-    background:  rgb(14, 74, 37);
+    background:  rgb(111, 231, 157);
     padding: 2rem;
     text-align: center;
     grid-column: 1/3;
