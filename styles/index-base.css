@@ -2,10 +2,10 @@
     box-sizing: border-box;
   }
   a {
-    color: beige;
+    color: purple;
   }
   nav {        
-    background-color: rgb(245, 165, 242);
+    background-color: rgb(14, 74, 37);
     padding: 1rem;
     border: 1rem;
   }
@@ -18,6 +18,7 @@
   }
 
    main {
+    background-color: rgb(49, 87, 49);
   	display: grid;
     grid-template-columns: 1fr 200px;
     grid-gap: 1rem;
@@ -34,7 +35,7 @@
   }
 
   footer {
-    background:  rgb(245, 165, 242);
+    background:  rgb(14, 74, 37);
     padding: 2rem;
     text-align: center;
     grid-column: 1/3;
