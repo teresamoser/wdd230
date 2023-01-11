@@ -2,41 +2,42 @@
     box-sizing: border-box;
   }
   a {
-    color: rgb(111, 231, 157);
+    color: rgb(207, 231, 216);
   }
   nav {        
-    background-color: rgb(74, 106, 86);
+    background-color: rgb(3, 0, 4);
     padding: 1rem;
     border: 1rem;
   }
 
   header {
-    background: rgb(79, 43, 84);
+    background: rgb(122, 77, 118);
     color: beige;
     padding: 2rem;
     grid-column: 1;
   }
 
    main {
-    background-color: rgb(49, 87, 49);
+    background-color: rgb(129, 178, 129);
   	display: grid;
     grid-template-columns: 1fr 200px;
     grid-gap: 1rem;
   }
 
   section {
-    width: 400px;
-    border: 15px;
-    margin: 20px;
-    background:white;
-    padding: 2rem;
-    text-align: center;
+    color: rgb(207, 231, 216);
+    width: 300px;
+    border: 10px;
+    margin: 10px;
+    background:rgb(122, 77, 118);
+    padding: 1rem;
+    text-align: left;
     grid-column: 1/3
   }
 
   footer {
-    background:  rgb(111, 231, 157);
-    padding: 2rem;
+    background:rgb(129, 178, 129);
+    padding: 1rem;
     text-align: center;
     grid-column: 1/3;
   }

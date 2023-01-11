@@ -1,10 +1,13 @@
 @media only screen and (min-width: 600px){
 
    nav{
-        background-color: black;
-        color: white;
+        background-color: rgb(96, 40, 92);
+        color: rgb(225, 217, 217);
         padding: 1rem;
         border: 1rem;
+    }
+    a {
+        color:rgb(225, 217, 217);
     }
     main{
         grid-template-columns: 1fr 1fr;
