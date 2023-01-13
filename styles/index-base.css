@@ -2,20 +2,28 @@
     box-sizing: border-box;
   }
   nav a {
-    color: rgb(236, 225, 195);
+    color: #020202;
+    text-decoration: none;
+    background-color:rgb(236, 225, 195);
+    padding: .5rem;
+    border-color:rgb(77, 24, 24);
+    border-style: solid;
   }
+
   nav { 
-    width: auto;
-    height: auto;      
-    background-color: rgb(77, 24, 24);
-    padding: 1rem;
-    border: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5px;
+    text-align: left;     
+    background-color: rgb(236, 225, 195);
   }
-  a {
-    color: rgb(248, 181, 181);
-  }
+
+ a {
+  color:rgb(236, 225, 195);
+ }
+
   header {
-    background: rgb(236, 225, 195);
+    background: rgb(77, 24, 24);
     color: black;
     padding: 1rem;
   }
@@ -25,18 +33,17 @@
     grid-gap: .5rem;
   }
    main {
-    background-color: rgb(161, 121, 121);
+    background-color: rgb(236, 225, 195);
     padding: 1rem;
   }
 
   section {
-    color: rgb(236, 225, 195);
-    width: 300px;
-    border: 10px;
-    margin: 10px;
-    background:rgb(77, 24, 24);
+    color: black;
+    background:rgb(161, 121, 121);
     padding: 1rem;
-    grid-template-columns: 1fr;
+    border-color:rgb(77, 24, 24);
+    border-style: solid;
+
   }
 
   footer {

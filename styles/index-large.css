@@ -1,29 +1,22 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 40rem){
 
    nav {
-        overflow: hidden;
+        flex-direction: row-reverse;
         background-color: rgb(161, 121, 121);
-        width: auto;
-        height: 100px;
     }
-    nav a {
-        color: rgb(16, 0, 0);
-        float: left;
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-    }
-    nav svg {
-        color: rgb(236, 225, 195);
-        float: left;
-        display: block;
-        text-align: center;
-    }
-
+ 
     main {
-        grid-template-columns: 2;
-        column-gap: 10px;   
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       max-width: 800px; 
+       margin: auto;
+    }
+    main h1{
+        grid-column: 1 / span 2;
     }
     
-    
+    main .card1{
+        grid-row: 2 / span 2;
+
+    }
 }
