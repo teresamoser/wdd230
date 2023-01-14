@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
   }
-  
+  body {
+    font-family: Tahoma, Arial, sans-serif;
+  }
   nav a {
     color: #020202;
     text-decoration: none;
