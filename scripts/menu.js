@@ -1,5 +1,5 @@
-const menubutton = document.querySelector("header button");
-const menuitems = document.querySelectorAll("nav");
+const menubutton = document.querySelector("#menu-button");
+const menuitems = document.querySelectorAll(".menu-item");
 // menuitems will be a Node List of the list items
 
 menubutton.addEventListener("click", () => {

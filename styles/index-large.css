@@ -3,8 +3,8 @@
     header {
         grid-template-columns: auto auto;
     }
-    nav button {
-        display: none;
+    button {
+        display: flex;
     }
     nav {
         position: initial;

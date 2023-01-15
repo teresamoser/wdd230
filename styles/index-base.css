@@ -4,23 +4,29 @@
 body {
     font-family: Tahoma, Arial, sans-serif;
   }
+
   a:active {
     color: black;
   }
 
-header, header a {
-    display: grid;
-    grid-template-columns: auto 48px;
+  h1 {
+    text-align: flex;
+  }
+  
+header {
     color:rgb(239, 228, 228);
     background: rgb(77, 24, 24);
     padding: 1rem;
     height: flex;
+
   }
 
-header button {
+button {
+    background-color: rgb(161, 121, 121);
     height: 48px;
     width: 48px;
     font-size: 2rem;
+  
   }
 
 img {
@@ -33,17 +39,18 @@ img {
     top: 20px;
     left: 40px;
   }
-  
-nav { 
-    display: none;
-    position: absolute;
-    flex-direction: column;
-    top: 60px;
-    right: 0px;
-    text-align: left;     
+nav {
+  display: grid;
+  grid-template-columns: auto 48px;
+  background-color:rgb(161, 121, 121) ;
+}
+
+nav a { 
+   color: black;
+   position: center;
   }
 
-nav li a {
+li a {
     color: #020202;
     text-decoration: none;
     background-color:rgb(236, 225, 195);
@@ -51,8 +58,12 @@ nav li a {
     border-color:rgb(77, 24, 24);
     border-style: solid;
   } 
-
-nav menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -64,47 +75,40 @@ nav menu {
     overflow: hidden;
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
   }
-
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-nav menu li a {
+  .menu li a {
     display: block;
     text-decoration: none;
     text-align: center;
-    list-style: none;
     width: 12rem;
     padding: 1rem;
-    color: black;
+    color: #72739f;
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: 0.5s ease-in-out;
   }
-
-nav menu li a:hover,
-nav menu li:first-child a {
-    background: rgb(161, 121, 121);
-    color: black;
+  
+  .menu li a:hover,
+  .menu li:first-child a {
+    background: #267fdd;
+    color: #fff;
   }
   
-nav.active{
+  .active{
     font-weight: 700;
   }
-
-nav li a.open {
-    display: block;
-  }
   
-nav li a.menu-item {
+  li a.menu-item {
     display: none;
   }
   
-nav.close::before {
-    content: " ❌ ";
+  li a.open {
+    display: flex;
   }
+  
+  .close::before {
+    content: " ❌  ";
+  }
+  
   
 title {
     display: grid;
@@ -115,10 +119,6 @@ title {
 main {
     background-size: auto;
     padding: 1rem;
-  }
-
-h1 {
-    text-align: right;
   }
   
 section {
