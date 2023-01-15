@@ -10,9 +10,9 @@ body {
   }
 
   h1 {
-    text-align: flex;
+    text-align: center;
   }
-  
+
 header {
     color:rgb(239, 228, 228);
     background: rgb(77, 24, 24);
@@ -26,6 +26,7 @@ button {
     height: 48px;
     width: 48px;
     font-size: 2rem;
+    position: right;
   
   }
 
@@ -40,14 +41,14 @@ img {
     left: 40px;
   }
 nav {
-  display: grid;
-  grid-template-columns: auto 48px;
+  /* display: grid;
+  grid-template-columns: auto 48px; */
   background-color:rgb(161, 121, 121) ;
 }
 
 nav a { 
    color: black;
-   position: center;
+   position: flex;
   }
 
 li a {
@@ -89,8 +90,8 @@ li a {
   
   .menu li a:hover,
   .menu li:first-child a {
-    background: #267fdd;
-    color: #fff;
+    background: rgb(161, 121, 121);
+    color: black;
   }
   
   .active{
