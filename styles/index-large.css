@@ -1,12 +1,12 @@
 @media only screen and (min-width: 38rem){
 
-    
-    button {
-        display: flex;
-    }
     nav {
-        position: initial;
-        display: block;
+       
+        flex-direction: column-reverse;
+    }
+    nav a {
+       float: right;
+       
     }
     nav ul {
         display: flex;
