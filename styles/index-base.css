@@ -30,7 +30,7 @@
     background-color: rgb(161, 121, 121);
   }
 
- a {
+ a:active {
   color: black;
  }
 
