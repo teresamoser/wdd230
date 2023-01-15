@@ -1,4 +1,4 @@
-const menubutton = document.querySelector("button");
+const menubutton = document.querySelector("#menu-button");
 const menuitems = document.querySelectorAll(".menu-item");
 // menuitems will be a Node List of the list items
 
