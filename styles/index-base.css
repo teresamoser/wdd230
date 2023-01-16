@@ -13,13 +13,6 @@ body {
     text-align: center;
   }
 
-header {
-    color:rgb(239, 228, 228);
-    background: rgb(77, 24, 24);
-    padding: 1rem;
-    overflow: hidden;
-  }
-
 img {
     border-color:rgb(236, 225, 195);
     border-style: solid;
@@ -30,9 +23,19 @@ img {
     top: 20px;
     left: 40px;
   }
+
+  header {
+    color:rgb(239, 228, 228);
+    background: rgb(77, 24, 24);
+    padding: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 44px;
+  }
+
  /* Navigation code  below*/ 
 
- button {
+header button {
   float: right;
   background-color: rgb(161, 121, 121);
   height: 80px;
@@ -42,30 +45,37 @@ img {
   top: 0;
 }
 nav {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  /* gap: 8px;
+  text-align: center; */
   background-color:rgb(161, 121, 121) ;
-  height: 80px;
+  /* height: 80px; */
+}
+nav.open {
+  display: block;
 }
 
 nav a { 
    color: black;
-   float: left;
+   /* float: left;
    text-align: center; 
    text-decoration: none;
-   padding: .8rem;
-   
+   padding: .8rem; */
+   display: block;
+   padding: .75rem 2rem;
+   border: dashed purple;
   }
-  nav a:hover, button:hover {
+  
+nav a:hover, button:hover {
     background-color: white;
   }
 
-
-/* Menu code below */
-
-li a {
+nav li a {
     color: #020202;
     text-decoration: none;
     background-color:rgb(236, 225, 195);
@@ -74,11 +84,13 @@ li a {
     border-style: solid;
   }
 
-  ul {
+  nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+
+/* Menu code below */
 
   .menu {
     position: fixed;
@@ -92,7 +104,7 @@ li a {
     overflow: hidden;
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
   }
-  
+
   .menu li a {
     display: block;
     text-decoration: none;
