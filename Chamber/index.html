@@ -13,12 +13,12 @@
      <meta property="og:title" content="Teresa Moser Portal for WDD230" />
      <meta property="og:type" content="website" />
      <meta property="og:url" content=" " />
-     <meta property="og:images" content="images/Early-Rigby-photo.jpeg"/>
+     <meta property="og:images" content="images/Early-Rigby-photo.jpg"/>
      
      <!---Favicon -->
-     <link rel="icon" href="">
+     <link rel="icon" href="images/Community.png">
     
-     <!---JS script files-->
+     <!---Javascript files-->
      <link rel="scripts" href="scripts/menu.js">
 
     <!--Style sheet links-->
@@ -26,29 +26,30 @@
      <link rel="stylesheet" href="styles/larger.css">
      <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
 </head>
-<main contenteditable width="760px" viewport="center">
-    <header>
-        <h1 contenteditable>Rigby Chamber of Commerce</h1>
-        <img src="images/2Early-Rigby-photo-.jpg" alt="Old Time Photo of Rigby" width="250" height="300"/>
-    </header>
+<body>
+    <main contenteditable width="760px" viewport="center">
+        <header>
+            <h1 contenteditable>Rigby Chamber of Commerce</h1>
+            <img src="images/2Early-Rigby-photo-.jpg" alt="Old Time Photo of Rigby" width="400" height="300"/>
+        </header>
 
-    <nav></nav>
-        <button>=</button>
-            <ul class="menu">
-                <li title="home">
-                    <a href="#" id="menu-button">🏠 Home </a>
-                </li>
-                <li title="search">
-                    <a href="#" class="menu-item">Discover</a>
-                </li>
-                <li title="about">
-                    <a href="#" class="menu-item">Directory</a>
-                </li>
-                <li title="contact">
-                    <a href="#" class="menu-item">Join</a>
-                </li>
-            </ul>
-
+        <nav>
+            <button>=</button>
+                <ul class="menu">
+                    <li title="home">
+                        <a href="#" id="menu-button">🏠 Home </a>
+                    </li>
+                    <li title="search">
+                        <a href="#" class="menu-item">Discover</a>
+                    </li>
+                    <li title="about">
+                        <a href="#" class="menu-item">Directory</a>
+                    </li>
+                    <li title="contact">
+                        <a href="#" class="menu-item">Join</a>
+                    </li>
+                </ul>
+        </nav>
         <section class="Discover">
             <h3>Discover</h3>
 
@@ -64,22 +65,19 @@
 
         </section>  
     </main>
-    <footer contenteditable>
-        <p> &copy;
-            <script>document.write(new Date().getFullYear())</script>
-             Rigby Chamber Of Commerce<br>
-              United States of America
-       </p>
+        <footer contenteditable>
+            <p> &copy;
+                <script>document.write(new Date().getFullYear())</script>
+                Rigby Chamber Of Commerce<br>
+                United States of America
+        </p>
 
-       <p class="highlight" id="lastModified">
-           <script>
-           const date = new Date(document.lastModified);
-           document.getElementById("lastModified").innerHTML = date; 
-           </script>
-       </p>
-    </footer>
-
-<body>
-    
+        <p class="highlight" id="lastModified">
+            <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("lastModified").innerHTML = date; 
+            </script>
+        </p>
+        </footer>    
 </body>
 </html>
