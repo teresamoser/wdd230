@@ -1,0 +1,26 @@
+@media only screen and (min-width: 700px){
+    nav{
+        background-color:#b2bcaa;
+        color: black;
+        }
+    
+    header{
+        background-color:#c9cebd;
+        color: maroon;
+        grid-column: 1/2;
+    }
+   section{
+        background-color: #838e83;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        
+    }
+    main{
+        background-color: #6c6061;
+        
+    }
+    footer{
+        background-color: #64403e;
+    }
+    
+}
