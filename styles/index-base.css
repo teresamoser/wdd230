@@ -54,7 +54,7 @@ nav {
   /* gap: 8px;
   text-align: center; */
   background-color:rgb(161, 121, 121) ;
-  /* height: 80px; */
+  height: 80px;
 }
 nav.open {
   display: block;
