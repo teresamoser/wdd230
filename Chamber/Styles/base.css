@@ -9,20 +9,46 @@
     font-family: Tahoma, Verdana, sans-serif;
   }
   
-  header {
+  header, header img{
     background: #49111C;
     color: White;
-    padding: 2rem;
-    grid-column: 1/3;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: auto 48px;
+    align-content: center;
   }
-  
+/* menu css*/
+  header button {
+    height: 48px;
+    width: 48px;
+    font-size: 2rem;
+  }
+
   nav {
-    grid-column: 1 / 3;
-    background-color: #0A0908;
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: #a9927d;
     color: #f2f4f3;
-    padding: 1rem;
   }
-  
+  nav.open {
+    display: block;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  nav li {
+    list-style: none;
+  }
+  nav a {
+    display: block;
+    padding: .75rem 2rem;
+    color: black
+ } 
+
+
   main {
     background: #f2f4f3;
     height: 100%;
