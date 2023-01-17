@@ -22,11 +22,6 @@
        gap: 1rem;  
     }
 
-    img {
-        position: absolute;
-        top: 20px;
-        left: 40px;
-    }
     main h1{
         grid-column: 1 / span 2;
     }

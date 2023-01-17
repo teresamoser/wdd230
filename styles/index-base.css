@@ -5,70 +5,68 @@ body {
     font-family: Tahoma, Arial, sans-serif;
   }
 
-  a:active {
+a:active {
     color: black;
   }
 
-  h1 {
+h1 {
     text-align: center;
   }
 
-img {
+header img {
     border-color:rgb(236, 225, 195);
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     gap: 1rem;
-    position: left;
+    display: grid;
     top: 20px;
     left: 40px;
   }
 
-  header {
+header {
     color:rgb(239, 228, 228);
     background: rgb(77, 24, 24);
     padding: 1rem;
     overflow: hidden;
-    display: grid;
+    display: flex;
     grid-template-columns: auto 44px;
+  }
+header button {
+    background-color: rgb(161, 121, 121);
+    height: 80px;
+    width: 80px;
+    font-size: 3rem; 
+    text-align: center;
+    display: grid;
   }
 
  /* Navigation code  below*/ 
 
-header button {
-  float: right;
-  background-color: rgb(161, 121, 121);
-  height: 80px;
-  width: 80px;
-  font-size: 4rem; 
-  right: 0;
-  top: 0;
-}
 nav {
-  /* display: flex;
-  flex-direction: column; */
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  /* gap: 8px;
-  text-align: center; */
-  background-color:rgb(161, 121, 121) ;
-  height: 80px;
-}
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    gap: 8px;
+    text-align: center;
+    background-color:rgb(161, 121, 121) ;
+    height: 80px;
+  }
+
 nav.open {
-  display: block;
-}
+    display: block;
+  }
 
 nav a { 
-   color: black;
-   /* float: left;
-   text-align: center; 
-   text-decoration: none;
-   padding: .8rem; */
-   display: block;
-   padding: .75rem 2rem;
-   border: dashed purple;
+    color: black;
+    float: left;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+    padding: .75rem 2rem;
+    border: dashed purple;
   }
   
 nav a:hover, button:hover {
@@ -121,10 +119,6 @@ nav li a {
   .menu li:first-child a {
     background: rgb(161, 121, 121);
     color: black;
-  }
-  
-  .active{
-    font-weight: 700;
   }
   
   li a.menu-item {
