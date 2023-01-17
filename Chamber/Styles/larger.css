@@ -8,21 +8,17 @@
     nav{
         background-color:#b2bcaa;
         color: black;
-        }
-        
+    }
    section{
         background-color: #838e83;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
         float: left;
         margin: 0 1.5%;
-        width: 30%;
-          
-        
+        width: 30%;    
     }
     main{
         background-color: #6c6061;
-        
     }
     footer{
         background-color: #64403e;
