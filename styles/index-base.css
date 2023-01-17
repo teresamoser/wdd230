@@ -4,15 +4,14 @@
 body {
     font-family: Tahoma, Arial, sans-serif;
   }
-
 a:active {
     color: black;
   }
-
 h1 {
     text-align: center;
+    display: grid;
+    grid-template-columns: auto;
   }
-
 header img {
     border-color:rgb(236, 225, 195);
     border-style: solid;
@@ -20,32 +19,33 @@ header img {
     border-radius: 25px;
     gap: 1rem;
     display: grid;
-    top: 20px;
-    left: 40px;
-  }
+    float: left;
 
+  }
 header {
     color:rgb(239, 228, 228);
     background: rgb(77, 24, 24);
     padding: 1rem;
     overflow: hidden;
-    display: flex;
-    grid-template-columns: auto 44px;
+    display: grid;
+    grid-template-columns: auto auto 44px;
+    height: 280px;
+    width:initial;
   }
 header button {
     background-color: rgb(161, 121, 121);
     height: 80px;
     width: 80px;
-    font-size: 3rem; 
+    font-size: 4rem; 
     text-align: center;
-    display: grid;
+
   }
 
  /* Navigation code  below*/ 
 
 nav {
     flex-direction: column;
-    display: none;
+    display:block;
     position: absolute;
     top: 60px;
     right: 0px;
@@ -54,39 +54,19 @@ nav {
     background-color:rgb(161, 121, 121) ;
     height: 80px;
   }
+nav a {
+  color: black;
+}
 
 nav.open {
     display: block;
   }
-
-nav a { 
-    color: black;
-    float: left;
-    text-align: center; 
-    text-decoration: none;
-    display: block;
-    padding: .75rem 2rem;
-    border: dashed purple;
-  }
   
 nav a:hover, button:hover {
     background-color: white;
+  
   }
 
-nav li a {
-    color: #020202;
-    text-decoration: none;
-    background-color:rgb(236, 225, 195);
-    padding: .5rem;
-    border-color:rgb(77, 24, 24);
-    border-style: solid;
-  }
-
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
 
 /* Menu code below */
 
@@ -142,8 +122,8 @@ title {
  /* Dark Mode code below */
   /* * {
     box-sizing: border-box;
-  }  */
-  /* body {
+  }  
+ body {
     display: flex;
     flex-direction: column;
     align-items: center;
