@@ -15,8 +15,28 @@
     padding: .5rem;
     display: grid;
     grid-template-columns: auto 48px;
-    align-content: center;
+    align-content: center; 
   }
+
+  header p{
+    padding: 1rem;
+  }
+
+  .join-button{
+    display: grid;
+    margin: auto;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 25px;
+    padding: 14px 28px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background-color:#a9927d;
+    color:black;
+  }
+
 /* menu css*/
   header button {
     height: 48px;
@@ -24,28 +44,49 @@
     font-size: 2rem;
   }
 
+  button:hover{
+    background-color:#a9927d;
+  }
+
   nav {
     display: none;
     position: absolute;
     top: 80px;
     right: 0px;
+    margin: 0 auto;
+    max-width: 760px;
     background-color: #a9927d;
     color: #f2f4f3;
   }
+
   nav.open {
     display: block;
   }
-  nav ul {
+
+    ul {
     margin: 0px;
     padding: 0px;
   }
-  nav li {
+
+   li {
+    display: none;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    border-color: #49111C;
+    border-style: solid;
   }
-  nav a {
+
+   li:hover{
+    background-color: white;
+  }
+
+   nav a {
     display: block;
-    padding: .75rem 2rem;
-    color: black
+	padding: 0.75rem 2rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
  } 
 
 /*end menu*/
