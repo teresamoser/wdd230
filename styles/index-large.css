@@ -5,15 +5,8 @@
         flex-direction: row-reverse;
     }
     nav a {
-       float: right;
-       
+       float: right;  
     }
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-    }
-
     main {
        display: grid;
        grid-template-columns: 1fr 1fr ;
@@ -21,12 +14,10 @@
        margin: auto;
        gap: 1rem;  
     }
-
     main h1{
         grid-column: 1 / span 2;
     }
     .card1 {
         grid-row: 2 / span 2;
-
     }
 }
