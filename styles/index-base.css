@@ -115,6 +115,9 @@ section {
     gap: 1rem;
     background:rgb(236, 225, 195);
   }
+section a {
+    color: rgb(77, 24, 24);
+  } 
 h2 {
     background:rgb(161, 121, 121);
     border-radius: 25px;
