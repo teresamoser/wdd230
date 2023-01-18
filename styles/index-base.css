@@ -9,7 +9,7 @@ a:active {
   }
 h1 {
     text-align:center;
-    display: grid;
+    display: flex;
     grid-template-columns: auto;
   }
 header img {
@@ -18,33 +18,33 @@ header img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     gap: 1rem;
-    display: grid;
-    float: left;
+    display: flex;
+  
   }
 header {
     color:rgb(239, 228, 228);
     background: rgb(77, 24, 24);
     padding: 1rem;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: auto auto 44px;
-    height: 280px;
-    width:initial;
+    display: flex;
+    grid-template-columns: auto 44px;
   }
 header button {
     background-color: rgb(161, 121, 121);
-    height: 80px;
-    width: 80px;
-    font-size: 4rem; 
+    height: 60px;
+    width: 60px;
+    font-size: 3rem; 
     text-align: center;
   }
 
  /* Navigation code  below*/ 
 
 nav {
-    display:block;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
     text-align: center;
+    background-color:rgb(161, 121, 121) ;
   }
 nav a:hover, button:hover {
     background-color: white;
@@ -52,10 +52,10 @@ nav a:hover, button:hover {
 /* Menu code below */
   nav a {
     display: none;
-    float:right;
-    position:initial;
+    grid-template-columns: auto;
     text-align: center;
-    width: 8rem;
+    width: auto;
+    height: auto;
     padding: .5rem;
     color:black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -68,7 +68,7 @@ nav a:hover, button:hover {
   .close::before {
     content: " ❌ ";
   }
-   
+
 title {
     display: grid;
     grid-template-columns: 1fr;
@@ -97,12 +97,8 @@ title {
     font-size: 2rem;
     cursor: pointer;
   }
-
 /* Dark Mode code end */
-main {
-    background-size: auto;
-    padding: 1rem;
-  } 
+
 section {
     color: black;;
     padding: 1rem;
@@ -119,7 +115,6 @@ h2 {
     border-radius: 25px;
     padding: 1rem; 
   }
-/* end of Dark Mode */
 
 footer {
     color:rgb(239, 228, 228);
