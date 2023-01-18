@@ -31,21 +31,26 @@ header {
   }
 header button {
     background-color: rgb(161, 121, 121);
-    height: 60px;
-    width: 60px;
-    font-size: 3rem; 
-    text-align: center;
+    height: 48px;
+    width: 48px;
+    font-size: 2rem; 
   }
+
 
  /* Navigation code  below*/ 
 
 nav {
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    margin: 0 auto;
+    max-width: 760px;
     gap: 8px;
     text-align: center;
     background-color:rgb(161, 121, 121) ;
   }
+
 nav a:hover, button:hover {
     background-color: white;
   }
