@@ -4,8 +4,12 @@
     nav {
         flex-direction: row-reverse;
     }
+    header button{
+        display: none;
+    }
     nav a {
-       float: right;  
+        display: horizontal;
+        float: right;  
     }
     main {
        display: grid;
