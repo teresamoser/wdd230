@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <h1 contenteditable>Lazy Load</h1>
+    <main>
+        <picture>
+            <img src="images/Blue Lupine.jpeg" alt="Blue Lupine Flower" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="images/Daisy.jpeg" alt=" Purple Daisy"  loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="images/Foxglove.jpeg" alt="Floxglove Flowers"  loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="images/Lily.jpeg" alt="Asian Lily Flower"  loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="images/Rose.jpeg" alt="Red/Yellow Rose" loading="lazy"  width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="images/Sunflowers.jpeg" alt="Heather's Sunflowers" loading="lazy"  width="400px" height="600px">
+        </picture>
+
+
+    </main>
+    <footer contenteditable>
+        <p> &copy;
+            <script>document.write(new Date().getFullYear())</script>
+             WDD 230 Lazyload assignment Teresa Moser 
+       </p>
+       <p class="highlight" id="lastModified">
+           <script>
+               const date = new Date(document.lastModified);
+               document.getElementById("lastModified").innerHTML = date; 
+           </script>
+       </p>
+    </footer>
+    
+</body>
+</html>

@@ -9,6 +9,7 @@ a:active {
   }
 h1 {
     text-align: center;
+    
   }
   header {
     color:rgb(239, 228, 228);
@@ -100,7 +101,7 @@ title {
   }
   main img {
     float: center;
-    margin: 0 0 2rem 2rem;
+    margin: 0 0 1rem 1rem;
     border: 1px solid #333;
     box-shadow: 0 0 15px #777;
   } 
@@ -119,7 +120,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: left;
     border-radius: 25px;
-    gap: 1rem;
+    gap: 1.5rem;
     background:rgb(236, 225, 195);
   }
 section a {
@@ -128,7 +129,8 @@ section a {
 h2 {
     background:rgb(161, 121, 121);
     border-radius: 25px;
-    padding: 1rem; 
+    padding: 1rem;
+    
   }
 
 footer {
