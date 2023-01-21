@@ -92,11 +92,10 @@ title {
   main {
     margin: 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    width: auto;
-    background-color: #eee;
+    padding: .5rem;
+    min-width: auto;
+    background-color: white;
     color: #000;
-    max-width: 1400px; 
     margin: auto;
   }
   main img {
