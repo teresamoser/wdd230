@@ -34,15 +34,21 @@
             </nav> 
         <img src="images/Teresa 2.jpeg" alt="Teresa's pix" width="150" height="200"/>
     </header>
-    <picture>
-        <source srcset="week03/images/laie_hawaii_temple_lds-small.webp" media="(max-width: 600px)">
-        <source srcset="week03/images/laie_hawaii_temple_lds-medium.webp" media="(max-width: 1000px)">
-        <img src="week03/images/laie_hawaii_temple_lds-large.webp" alt="hero image">
-    </picture>
-    <main contenteditable width="760px" viewport="center"><h1>WDD 230: Course Activity Portal</h1>
+    <div class="hero">
+        <picture>
+            <source srcset="week03/images/laie_hawaii_temple_lds-small.webp" media="(max-width: 600px)">
+            <!-- <source srcset="week03/images/laie_hawaii_temple_lds-medium.webp" media="(max-width: 1000px)"> -->
+            <img src="week03/images/laie_hawaii_temple_lds-large.webp" media="(max-width: 1000px)" alt="hero image">
+                <div class="herolabel">
+                    <p>Laie Hawaii Temple</p>
+                </div>
+        </picture>
+    </div>
+
+<main contenteditable width="760px" viewport="center"><h1>WDD 230: Course Activity Portal</h1>
     <div id="mode">
-            ☑️
-        </div>
+         ☑️
+     </div>
         <section class="card1">
             <h2>Learning Activities</h2> 
                     Week 01: 
@@ -77,22 +83,13 @@
                 <!---Information placeholders about the weather, number of visits to the page, etc. 
                 You do not need to program this functionality yet.-->
         </section>
-
-    </main>
-    <footer contenteditable>
-        <p> &copy;
-             <script>document.write(new Date().getFullYear())</script>
-              Teresa Moser  United States
-        </p>
-        <p class="highlight" id="lastModified">
-            <script>
-                const date = new Date(document.lastModified);
-                document.getElementById("lastModified").innerHTML = date; 
-            </script>
-        </p>
-    </footer> 
+</main>
+<footer contenteditable>
+    &copy; <a class="highlight" id="newDate"></a> Teresa Moser 
+    <p class="highlight" id="lastModified"> </p>
+</footer> 
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script></script>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
