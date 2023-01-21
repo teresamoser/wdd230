@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
   }
-  
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body {
     font-family: Tahoma, Arial, sans-serif;
@@ -12,6 +10,7 @@ a:active {
   }
 h1 {
     text-align: center;
+    /* text-justify: auto; */
     
   }
   header {
@@ -28,7 +27,8 @@ header img {
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
-   
+    top: 60px;
+    left: 10px;
   }
 
 header button {
@@ -51,10 +51,10 @@ header button {
  /* Navigation code  below*/ 
 
 nav {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 0px;
+  /* display: grid;
+  position: absolute; */
+  /* top: 80px;
+  right: 10px; */
   background-color:rgb(161, 121, 121) ;
   }
 
