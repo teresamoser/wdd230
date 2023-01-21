@@ -2,20 +2,17 @@
 @media only screen and (min-width: 40rem){
 
     nav {
-        flex-direction: row-reverse;
-    }
+
+    } 
+
     header button{
         display: none;
     }
-    nav a {
-        display: horizontal;
-        float: right;  
-    }
     main {
        display: grid;
-       grid-template-columns: 1fr 1fr ;
-       max-width: 800px; 
-       margin: auto;
+       /* grid-template-columns: 1fr 1fr ; */
+       max-width: 1000px; 
+       margin: 0;
        gap: 1rem;  
     }
     main h1{

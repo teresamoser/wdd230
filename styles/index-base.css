@@ -1,26 +1,22 @@
 * {
     box-sizing: border-box;
   }
-
 body {
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Tahoma, , serif;
   }
 a:active {
     color: black;
   }
 h1 {
     text-align: center;
-    /* text-justify: auto; */
-    
   }
-  header {
+header {
     color:rgb(239, 228, 228);
     background: rgb(77, 24, 24);
     display: grid;
     grid-template-columns: auto 48px;
-    align-content: center; 
+    height: 20rem;
   }
-
 header img {
     position:absolute;
     border-color:rgb(236, 225, 195);
@@ -30,7 +26,6 @@ header img {
     top: 60px;
     left: 10px;
   }
-
 header button {
     position: initial;
     float: right;
@@ -47,14 +42,13 @@ header button {
     background-color:#a9927d;
   }
 
-
  /* Navigation code  below*/ 
 
 nav {
-  /* display: grid;
-  position: absolute; */
-  /* top: 80px;
-  right: 10px; */
+  display: grid;
+  height: 5rem;
+  width: 550px;
+ 
   background-color:rgb(161, 121, 121) ;
   }
 
@@ -63,7 +57,7 @@ nav a:hover, button:hover {
   }
 /* Menu code below */
   nav a {
-    display: block;
+    display: none;
     grid-template-columns: auto;
     text-align: center;
     padding: .5rem;
@@ -119,7 +113,6 @@ nav a:hover, button:hover {
       font-size: 2rem;
       font-family: cursive;
     }
-
   /* Picture label code ends */
 
  /* Dark Mode code below */
@@ -143,6 +136,7 @@ nav a:hover, button:hover {
     font-size: 2rem;
     cursor: pointer;
   }
+
 /* Dark Mode code end */
 
 section {
@@ -158,12 +152,12 @@ section {
   }
 section a {
     color: rgb(77, 24, 24);
-  } 
+  }
+
 h2 {
     background:rgb(161, 121, 121);
     border-radius: 25px;
-    padding: 1rem;
-    
+    padding: 1rem; 
   }
 
 footer {
