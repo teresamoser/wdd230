@@ -25,7 +25,7 @@ header img {
   top: 80px;
   left: 10px;
   }
-nav button {
+header button {
   display: grid;
   flex-direction: row;
   text-align: center;
@@ -148,6 +148,40 @@ h2 {
   border-radius: 25px;
   padding: 1rem; 
   }
+
+  /* visits per page */
+  p {
+    margin: 1rem;
+  }
+  
+  .label {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+  }
+  
+  #visits {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+
+
+/* Embedded map code */
+.googlemap {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.googlemap iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+/* End of map code */
 
 footer {
   color:rgb(239, 228, 228);
