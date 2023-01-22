@@ -25,10 +25,10 @@ header img {
   top: 80px;
   left: 10px;
   }
-header button {
-  /* display: grid;
-  flex-direction:row;
-  align-self: center; */
+nav button {
+  display: grid;
+  flex-direction: row;
+  text-align: center;
   height: 48px;
   width: 48px;
   font-size: 2rem;
