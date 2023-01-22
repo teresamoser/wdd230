@@ -1,17 +1,22 @@
 /* 40 rem * 16px = 640px */
 @media only screen and (min-width: 40rem){
 
-    nav {
-
-    } 
-
+    nav   {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 8px;
+        text-align: center;
+    }
+    nav a {
+        padding: .8rem;
+    }
     header button{
         display: none;
     }
     main {
        display: grid;
-       /* grid-template-columns: 1fr 1fr ; */
-       max-width: 1000px; 
+       grid-template-columns: 1fr 1fr ;
+       max-width: auto; 
        margin: 0;
        gap: 1rem;  
     }
