@@ -39,23 +39,26 @@
 
 /* menu css*/
   header button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     height: 48px;
     width: 48px;
     font-size: 2rem;
     background-color:#a9927d;
   }
 
-  button:hover{
+  button:hover, nav a:hover{
     background-color:white;
   }
 
   nav {
     display: none;
-    position: absolute;
-    top: 80px;
+    flex-direction: column;
+    /* top: 80px;
     right: 0px;
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 760px; */
     gap: 8px;
     text-align: center;
     background-color: #a9927d;
