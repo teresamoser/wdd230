@@ -1,31 +1,41 @@
-/* 40 rem * 16px = 640px */
-@media only screen and (min-width: 40rem){
 
-    nav ul{
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 8px;
-        text-align: center;
-        list-style: none;
-    }
-    nav li {
-        padding: .8rem;
-        text-decoration: none;
-    }
-    header button{
-        display: none;
-    }
-    main {
-       display: grid;
-       grid-template-columns: 1fr 1fr ;
-       max-width: auto; 
-       margin: 0;
-       gap: 1rem;  
-    }
-    main h1{
-        grid-column: 1 / span 2;
-    }
-    .card1 {
-        grid-row: 2 / span 2;
-    }
+@media only screen and (min-width: 600px){
+nav {
+    max-width: 1700px;
+}
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    text-align: center;
+    list-style: none;
+}
+.menu li {
+    display: block;
+    flex: 1 1 auto;
+    padding: .8rem;
+    text-decoration: none;
+}
+.menu a {
+    text-align: center;
+}
+.menu li:first-child {
+    display: none;
+}
+header button{
+    display: none;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: auto; 
+    margin: 0;
+    gap: 1rem;  
+ }
+main h1{
+    grid-column: 1 / span 2;
+}
+.card1 {
+    grid-row: 2 / span 2;
+} 
 }
