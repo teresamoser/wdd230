@@ -3,24 +3,18 @@
  
 header {
     grid-template-columns: auto auto;
-
 }   
 header button{
     display: none;
 }
 nav {
-    display:block;
+    display: block;
+    min-width: 1700px;
 }
+
 nav ul {
     display: flex;
-    /* gap: 8px;
-    text-align: center;
-    list-style: none; */
-}
-.menu li  a{
-    padding: .8rem;
-    text-decoration: none;
-    text-align: center;
+    flex-direction: row-reverse;
 }
 
 main {
