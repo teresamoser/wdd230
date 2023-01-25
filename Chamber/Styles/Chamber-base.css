@@ -8,8 +8,10 @@
     grid-template-rows: auto, auto, 1fr, auto;
     font-family: Tahoma, Verdana, sans-serif;
   }
-  
-  header, header img{
+  h1 {
+    display: flex; 
+  }
+  header {
     background: #49111C;
     color: White;
     padding: .5rem;
@@ -17,13 +19,16 @@
     grid-template-columns: auto 48px;
     align-content: center; 
   }
-
+  header img{
+    display: block;
+  }
   header p{
     padding: 1rem;
+    font-size: larger;
   }
 
   .join-button{
-    display: grid;
+    display: flex;
     margin: auto;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -35,68 +40,63 @@
     cursor: pointer;
     background-color:#a9927d;
     color:black;
+    gap: 8px;
   }
 
 /* menu css*/
+
   header button {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     height: 48px;
     width: 48px;
     font-size: 2rem;
     background-color:#a9927d;
   }
-
-  button:hover, nav a:hover{
-    background-color:white;
-  }
-
   nav {
-    display: none;
-    flex-direction: column;
-    /* top: 80px;
-    right: 0px;
+    /* display: none; */
+    position: absolute;
+    top: 100px;
+    right: 25px;
     margin: 0 auto;
-    max-width: 760px; */
+    max-width: 760px;
     gap: 8px;
     text-align: center;
     background-color: #a9927d;
     color: #f2f4f3;
   }
-
-  nav.open {
-    display: block;
+  nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-  .close::before {
-    content: " ❌ ";
-  }
-
   nav ul {
     margin: 0px;
     padding: 0px;
   }
-
-  nav li {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-color: #49111C;
-    border-style: solid;
-  }
-
-  nav li:hover{
-    background-color: white;
-  }
-
   nav a {
     display: block;
+    position: column;
     padding: 0.75rem 2rem;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     color: black;
- } 
+    transition: 0.5s;
+  }
+  nav li {
+    text-decoration: none;
+    color:black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: vertical 0.5s ease-in-out;
+    background-color: #a9927d;
+    } 
+  nav a:hover, button:hover {
+    background-color: white;
+    }
+  nav.open {
+    display: block;
+    }
+  .close::before {
+    content: " ❌ ";
+    }
 
 /*end menu*/
 
@@ -110,6 +110,7 @@
   section {
     background: #a9927d;
     padding: 1rem;
+    column-gap: 10px;
     grid-column: 1/3;
   }
   
