@@ -1,6 +1,6 @@
 
 const mybtn = document.querySelector("header button");
-const mynav = document.querySelectorAll(".menu li");
+const mynav = document.querySelectorAll("nav a");
 
 mybtn.addEventListener("click", () => {
 	mynav.forEach((item) => item.classList.toggle("open"));
