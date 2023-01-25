@@ -12,6 +12,8 @@ h1 {
   padding: 1rem;
   }
 header {
+  display: grid;
+  grid-template-columns: auto 48px;
   color:rgb(239, 228, 228);
   background: rgb(77, 24, 24);
   height: 20rem;
@@ -26,10 +28,6 @@ header img {
   left: 10px;
   }
 header button {
-  display: flex;
-  flex-direction: column; 
-  text-align: center;
-  float: right;
   height: 48px;
   width: 48px;
   font-size: 2rem;
@@ -37,25 +35,29 @@ header button {
   }
 
  /* Menu code below */
-
   nav  {
-  margin: 0 auto;
-  max-width: 760px;
-  background-color:rgb(161, 121, 121) ;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    margin: 0 auto;
+    max-width: 760px;
+    background-color:rgb(161, 121, 121) ;
   }
   .menu {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  .menu li:first-child {
-    display: flex;
-    flex-direction: column;
+ 
+  nav ul {
+    margin: 0px;
+    padding: 0px;
   }
   nav a {
-    display: none;
+    display: block;
     position: column;
-    padding: 0.75rem;
+    padding: 0.75rem 2rem;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -73,9 +75,8 @@ header button {
   transition: vertical 0.5s ease-in-out;
   background-color:rgb(161, 121, 121) ;
   } 
-nav a.open {
+ nav.open {
   display: block;
-  
   }  
 .close::before {
   content: " ❌ ";
