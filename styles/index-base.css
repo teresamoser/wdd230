@@ -175,6 +175,30 @@ h2 {
     font: tahoma;
     font-size: larger;
   }
+  
+/* Embedded map code */
+.googlemap {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: auto;
+  height: 450px;
+  padding: 1rem;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  gap: 1.5rem;
+  background:rgb(236, 225, 195);
+}
+.googlemap iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* End of map code */
+
 
 /* Form contact us */
   .main {
@@ -226,16 +250,16 @@ h2 {
   }
   
   .stars > label {
-    color: gold;
+    color: rgb(237, 202, 3);
     width: 30px;
     height: 30px;
     font-size: 1.5rem;
     margin-left: 5px;
     display: flex;
     align-items: center;
-    caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+    caret-color: rgba(0, 0, 0, 0);
   }
-  
+
   .stars > label:hover {
     color: #ff69b4;
     transition: 0.2s ease;
@@ -282,22 +306,6 @@ h2 {
 	}
 }
 
-
-/* Embedded map code */
-.googlemap {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-.googlemap iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-/* End of map code */
 
 footer {
   color:rgb(239, 228, 228);
