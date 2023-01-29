@@ -240,9 +240,9 @@ h2 {
     justify-content: left;
   }
   .stars > label {
-    color: rgb(237, 202, 3);
-    width: 30px;
-    height: 30px;
+    color: rgb(100, 11, 11);
+    width: 40px;
+    height: 40px;
     font-size: 1.5rem;
     margin-left: 5px;
     display: flex;
@@ -250,7 +250,7 @@ h2 {
     caret-color: rgba(0, 0, 0, 0);
   }
   .stars > label:hover {
-    color: #841919;
+    color: #a53c3c;
     transition: 0.2s ease;
   }
   .stars > label::before {

@@ -11,12 +11,10 @@ nav {
     display: block;
     min-width: 1700px;
 }
-
 nav ul {
     display: flex;
     flex-direction: row-reverse;
 }
-
 main {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -30,13 +28,20 @@ main h1{
 .card1 {
     grid-row: 2 / span 2;
 } 
-.main{
-    /* display: grid;
+/* .main{
+    display: grid;
     grid-template-columns: 1fr 1fr ;
     max-width: auto; 
+    max-height: auto;
     margin: 0;
-    gap: 1rem;  */
+    gap: 1rem; 
 }
+.main h1{
+    grid-column: 1 / span 2;
+} */
+table{
+    position: initial;
 
+}
 
 }
