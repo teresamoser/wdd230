@@ -30,5 +30,13 @@ main h1{
 .card1 {
     grid-row: 2 / span 2;
 } 
+.main{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: auto; 
+    margin: 0;
+    gap: 1rem;  */
+}
+
 
 }

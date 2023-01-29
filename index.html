@@ -109,18 +109,23 @@
         </div>
 
 <!-- Contact Us Form -->
-    <main width="760px" viewport="center" class="main" >
+    <main class="main" >
     <h1>Contact Us Form</h1>
         <form method="get" oninput="result.value=parseInt(a.value)"></form>
             <div id="formmessage"></div>
             <label>Star Rating:</label>     
-            <div class="stars">
-                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>   
-                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>      
-                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>   
-                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>  
-                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>    
-            </div>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required>
+                        <label for="fivestar"></label>   
+                    <input type="radio" id="fourstar" name="stars" value="4" required>
+                        <label for="fourstar"></label>      
+                    <input type="radio" id="threestar" name="stars" value="3" required>
+                        <label for="threestar"></label>   
+                    <input type="radio" id="twostar" name="stars" value="2" required>
+                        <label for="twostar"></label>  
+                    <input type="radio" id="onestar" name="stars" value="1" required>
+                        <label for="onestar"></label>    
+                </div>
             <label for="fullname">Name:</label>
                 <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
             <label for="email">Email address:</label>
@@ -132,10 +137,11 @@
             <label for="keyphrase2">Re-enter User Name:</label>
                 <input type="text" id="keyphrase2" name="keyphrase2" />
             <label for="comments">Message:</label>
-            <textarea id="comments" name="comments" required></textarea>
+                <textarea id="comments" name="comments" required></textarea>
             <button class="msgbtn" id="btnSubmit" type="submit">Send Message</button>
-            <input type="hidden" value="43aster">      
+                <input type="hidden" value="43aster">      
         </form>
+    </main>
         <table>
             <caption> HTML Table Output</caption>
             <thead>
@@ -166,9 +172,7 @@
                 </tr>
             </tbody>
         </table>
-    </main>
-
-        <footer width="760px" viewport="center" class="footer" >
+        <footer >
             &copy; <a class="highlight" id="newDate"></a> Teresa Moser <br>
             <a class="highlight" id="lastModified"> </a>
         </footer> 

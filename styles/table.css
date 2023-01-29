@@ -1,5 +1,5 @@
 :root {
-	--back: rgb(106, 28, 28);
+	--back: rgb(98, 19, 19);
     --back2: rgba(142, 18, 18, 0.5);
     --foredark: hsla(0,0%,10%,1);
 	--forelight: hsla(0,0%,100%,1);
@@ -10,14 +10,21 @@
 }
 
 table {
-	margin: 10px auto;
-	border: thin solid var(--border);
-	border-collapse: collapse;
+    margin: 2rem;
+    color: black;;
+    padding: 1rem;
+    border-color:rgb(77, 24, 24);
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    border-radius: 25px;
+    gap: 1.5rem;
+    background:rgb(236, 225, 195);
 }
 
 caption {
-  padding: 10px;
-  caption-side: bottom;
+    padding: 10px;
+    caption-side: bottom;
 	color: var(--back);
 	font-size: .85rem;
 }
