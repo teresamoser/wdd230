@@ -44,7 +44,6 @@
   }
 
 /* menu css*/
-
   header button {
     height: 48px;
     width: 48px;
@@ -63,7 +62,7 @@
     background-color: #a9927d;
     color: #f2f4f3;
   }
-  nav li {
+  .menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -81,19 +80,19 @@
     color: black;
     transition: 0.5s;
   }
-  nav li {
+  .menu a:hover, button:hover {
+    background-color: white;
+    }
+  .menu li {
     text-decoration: none;
     color:black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: vertical 0.5s ease-in-out;
-    background-color: #a9927d;
+    background-color:#a9927d ;
     } 
-  nav a:hover, button:hover {
-    background-color: white;
-    }
-  nav.open {
+   nav.open {
     display: block;
-    }
+    }  
   .close::before {
     content: " ❌ ";
     }

@@ -1,8 +1,8 @@
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 600px){
     
     header {
-        grid-template-columns: auto auto;
-        display: block; 
+        
+    
     }  
     header button{
         display: none;
