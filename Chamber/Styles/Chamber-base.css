@@ -20,7 +20,7 @@
     align-content: center; 
   }
   header img{
-    display: block;
+    display: flex;
   }
   header p{
     padding: 1rem;
