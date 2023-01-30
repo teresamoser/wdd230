@@ -22,11 +22,10 @@
   header img{
     display: flex;
   }
-  header p{
+  /* header p{
     padding: 1rem;
     font-size: larger;
-  }
-
+  } */
   .join-button{
     display: flex;
     margin: auto;

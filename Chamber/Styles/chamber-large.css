@@ -1,4 +1,4 @@
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 7600px){
     
     header {
         width: 100%;
@@ -7,14 +7,14 @@
     header button{
         display: none;
     }
-    header p {
+    /* header p {
         display: flex;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
         padding: 1rem;
         font-size: larger;
-    }
+    } */
     nav {
         min-width: 1400px;
         top: 10px;
