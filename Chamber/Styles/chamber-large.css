@@ -4,6 +4,7 @@
     header {
         width: 100%;
         grid-column: 1 / 4;
+        height: auto;
     } 
     header img {
         width:fit-content;
@@ -16,6 +17,9 @@
         display: none;
     }
 
+    main h1{
+        grid-column: 1 / span 2;
+    }
 
     nav {
         min-width: 1400px;
@@ -27,23 +31,38 @@
         flex-direction: row-reverse;
     }
 
+    /* Sections css */
+    section {
+       
+    }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        max-width: auto; 
-        margin: 0;
-        gap: 1rem; 
-        background-color: #6c6061;
-     }
-    main h1{
-        grid-column: 1 / span 2;
-    }
-    section{
-        column-gap: 10px;
-        margin: 0 1.5%;
-        width: 600px ; 
-    }
+    .comm-info, .weather {
+        color: black;;
+        padding: 1rem;
+        border-color:rgb(77, 24, 24);
+        border-style: solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: left;
+        border-radius: 25px;
+        gap: 1.5rem;
+        background:#a9927d;
+        grid-row: 2;
+        }
+
+    .bus-spot1, .bus-spot2, .bus-spot3 {
+        color: black;;
+        padding: 1rem;
+        border-color:rgb(77, 24, 24);
+        border-style: solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: left;
+        border-radius: 25px;
+        gap: 1.5rem;
+        background:#a9927d;
+        grid-row: 3;
+        } 
+         
+ /* Discover page css */
     .main-content {
         margin-left: 200px;
         padding: 1px 16px;
@@ -60,5 +79,5 @@
         overflow: auto;
       } 
     
-    }
+}
     
