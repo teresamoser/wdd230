@@ -250,7 +250,7 @@ h2 {
     caret-color: rgba(0, 0, 0, 0);
   }
   .stars > label:hover {
-    color: #a53c3c;
+    color: #841919;
     transition: 0.2s ease;
   }
   .stars > label::before {
