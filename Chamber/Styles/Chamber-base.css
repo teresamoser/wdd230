@@ -29,6 +29,8 @@
     border-radius: 25px;
     top: 100px; 
     left: 50px; 
+    width: 100%;
+    height: auto;
   }
   .join-button{
     display: flex;

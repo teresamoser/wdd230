@@ -2,8 +2,16 @@
 @media only screen and (min-width: 600px){
  
     header {
-        grid-template-columns: auto auto;
-    }   
+        width: 100%;
+        grid-column: 1 / 4;
+    } 
+    header img {
+        width:fit-content;
+        position: center;
+        display: flex;
+        margin: auto;
+        border: none;
+    }  
     header button{
         display: none;
     }
