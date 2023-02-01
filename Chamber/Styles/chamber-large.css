@@ -4,7 +4,7 @@
     header {
         width: 100%;
         grid-column: 1 / 4;
-        height: auto;
+        height: 20 rem;
     } 
     header img {
         width:fit-content;
@@ -32,9 +32,6 @@
     }
 
     /* Sections css */
-    section {
-       
-    }
 
     .comm-info, .weather {
         color: black;;
@@ -42,12 +39,15 @@
         border-color:rgb(77, 24, 24);
         border-style: solid;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: left;
         border-radius: 25px;
         gap: 1.5rem;
         background:#a9927d;
         grid-row: 2;
         }
+
+    .comm-info {
+        grid-column-end: 2 span;
+    }
 
     .bus-spot1, .bus-spot2, .bus-spot3 {
         color: black;;
@@ -64,19 +64,22 @@
          
  /* Discover page css */
     .main-content {
-        margin-left: 200px;
+        margin-left: 300px;
         padding: 1px 16px;
         height: auto;
       }
     .left-sidebar {
         margin: 0;
-        top: auto;
-        padding: 0;
         margin-right:auto;
+        width: 300px;
+        position: absolute;
+        left: 15 px;
+        top: 41rem;
+        padding-top: 40px;
         background-color: #a9927d;
         height:50%;
         position: absolute;
-        overflow: auto;
+        overflow: none; 
       } 
     
 }

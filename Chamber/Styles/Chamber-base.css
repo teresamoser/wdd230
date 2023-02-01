@@ -116,6 +116,9 @@ nav a {
     background-color:#a9927d ;
     gap: 1.5rem;
   }
+  .left-sidebar {
+    background-color: #a9927d;
+  }
 
   footer {
     background: #5E503F;
