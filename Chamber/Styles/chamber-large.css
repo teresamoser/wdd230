@@ -65,22 +65,35 @@
          
  /* Discover page css */
     .main-content {
-        margin-left: 300px;
+        margin-left: 400px;
+        margin-right: auto;
         padding: 1px 16px;
         height: auto;
-        content: center;
-      }
+        /* display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; */
+
+
+    }
+    .main-content img:hover {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 25px;
+        
+     
+    }
+
     .left-sidebar {
         margin: 0;
-        margin-right:auto;
-        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+        height :auto;
         position: absolute;
         left: 15 px;
         top: 41rem;
         padding-top: 40px;
         background-color: #a9927d;
-        /* height:50%; */
-        position: absolute;
         overflow: none; 
       } 
     

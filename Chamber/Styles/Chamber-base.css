@@ -115,6 +115,18 @@ nav a {
     border-radius: 25px;
     background-color:#a9927d ;
     gap: 1.5rem;
+
+  }
+  .main-content img{
+    display: flex;
+    border-color:rgb(236, 225, 195);
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    top: 100px; 
+    left: 50px; 
+    width: 100%;
+    height: auto;
   }
   .left-sidebar {
     background-color: #a9927d;
