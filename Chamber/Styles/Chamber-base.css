@@ -117,6 +117,8 @@
     gap: 1.5rem;
 
   }
+  /* Discover page css */
+
   .main-content img{
     display: flex;
     border-color:rgb(236, 225, 195);
@@ -130,8 +132,13 @@
   }
   .left-sidebar {
     background-color: #a9927d;
+    text-align: center;
+    
+    
+
   }
-/* Discover page css */
+
+
 /* visits per page */
   p {
     margin: 1rem;
@@ -141,12 +148,12 @@
     font-weight: 700;
   }
   #visits {
-    color: navy;
+    color: rgb(93, 3, 3);
     font-weight: bolder;
     font: tahoma;
     font-size: larger;
   }
-  /* Discover page css */
+  /* Discover page css  end */
 
   footer {
     background: #5E503F;

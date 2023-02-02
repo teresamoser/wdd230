@@ -31,7 +31,7 @@
         flex-direction: row-reverse;
     }
 
-    /* Sections css */
+    /* Sections Home page css */
 
     .comm-info, .weather {
         color: black;;
@@ -76,15 +76,12 @@
         border-width: 10px;
     }
     .left-sidebar {
-        margin-right: auto;
-        margin-left: auto;
         width: 400px;
         height: auto;
         position: absolute;
         top: 41rem;
-        background-color: #a9927d;
-        overflow: none; 
-    
+        display: flex;
+        flex-direction: column;
       } 
     
 }
