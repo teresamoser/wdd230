@@ -51,9 +51,9 @@
         </header>
     </main>
 
-
+<section>
     <h1>Join the Rigby Chamber of Commerce</h1>
-    <form method="get" action="thanks.html">
+    <form method="get" action="join-thanks.html">
         <fieldset>
             <legend> Applicant Information</legend>
             <label class="top"> First Name* <input type="text" name="fname" required></label>
@@ -64,45 +64,41 @@
         </fieldset>
         <fieldset>
             <legend>Business Information</legend>
-            <div>Audience</div>
-            <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner </label>
-            <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate </label>
-            <label class="sbs"><input type="radio" name="audience" value="advance"> Advance </label>
+            <div>Type</div>
+            <label class="sbs"><input type="radio" name="audience" value="online"> Online</label>
+            <label class="sbs"><input type="radio" name="audience" value="brick"> Brick & Mortor </label>
+            <label class="sbs"><input type="radio" name="audience" value="combo"> Combination</label>
 
-            <div>Software Needed</div>
-            <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-            <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-            <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-            <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+            <div>Business Licensing</div>
+            <label class="sbs"><input type="checkbox" name="franchise" value="yes"> Franchise</label>
+            <label class="sbs"><input type="checkbox" name="startup" value="yes"> Start-Up</label>
+            <label class="sbs"><input type="checkbox" name="web" value="yes"> Web Master</label>
+            <label class="sbs"><input type="checkbox" name="train" value="yes"> In-Training</label>
 
         </fieldset>
 
         <fieldset>
-            <legend>Funding</legend>
-            <label class="top">Anticipated Completion Date<input type="date" name="completeDate">
+            <legend>Membership Fee Payment</legend>
+            <label class="top">Enter today's Date<input type="date" name="completeDate">
             </label>
-            <label class="top"> Course Subject
+            <label class="top"> Payment options
                 <select name="subject">
                     <option value=" ">Please Select &#9662;</option>
-                    <option value="software">Software Development</option>
-                    <option value="creative">Creative Professional</option>
-                    <option value="info">Information Technology</option>
-                    <option value="data">Data Professional</option>
-                    <option value="construction">Construction</option>
-                    <option value="manufacturing">Manufacturing</option>
-                    <option value="business">Business Professonal</option>
-                    <option value="security">Cyber Security</option>
-
+                    <option value="monthly">Month-to-Month</option>
+                    <option value="six">Every Six Months</option>
+                    <option value="yearly">Yearly</option>
+                    <option value="two">Two year</option>
+                    <option value="four">Four year</option>
+                    <option value="six">Six year</option>
+                    <option value="Life">Lifetime</option>
                 </select>
             </label>
-            <label class="top">How Many Authors <input type="number" name="authors">
+            <label class="top">How many memberships <input type="number" name="members">
             </label>
-
-
         </fieldset>
-        <input type="submit" value="Propose my Course" class="submitBtn">
+        <input type="submit" value="Membership Complete" class="submitBtn">
     </form>
-
+</section>
 
         <footer>
             <p> &copy;
