@@ -45,7 +45,6 @@
     cursor: pointer;
     background-color:#a9927d;
     color:black;
-    gap: 8px;
   }
 
 /* Menu code below */
@@ -93,6 +92,7 @@
   .close::before {
     content: " ❌ ";
     }
+
 /*end of menu*/
 
 
@@ -102,7 +102,7 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: .5rem;
     min-width: auto;
-    background-color: #836063;
+    background-color: #847678;
     color: #000;
     margin: auto;
   }
@@ -118,6 +118,7 @@
     gap: 1.5rem;
 
   }
+
   /* Discover page css */
 
   .main-content img{
@@ -132,9 +133,9 @@
     height: auto;
   }
   .left-sidebar {
-    background-color: #d6c1ad;
+    background-color: #aa9888;
     text-align: center;
-
+    font-size: large;
   }
 /* Discover page css  end */
 

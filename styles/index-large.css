@@ -27,8 +27,11 @@
     }
     .card1 {
         grid-row: 2 / span 2;
-        text-align: center;
+        text-align: left;
     } 
+    .card1 h2{
+        text-align: center;
+    }
     .card2{
         text-align: center;
     }

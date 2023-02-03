@@ -70,6 +70,8 @@
         margin-right: auto;
         padding: 1px 16px;
         height: auto;
+        min-width: 400px;
+        
     }
     .main-content img:hover {
         box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 16px 44px 0 rgba(0, 0, 0, 0.19);
@@ -83,18 +85,23 @@
         top: 41rem;
         display: flex;
         flex-direction: column;
-       
+     
       } 
-      /* visits per page */
 
-      .label {
-        font-family: Tahoma, Verdana, sans-serif;
+      /* visits per page */
+      
+    p {
+        margin: 1rem;
+      }
+      
+    .label {
+        font-family: Arial, sans-serif;
         font-weight: 700;
       }
-      #visits {
-        color: rgb(132, 6, 6);
+      
+    #visits {
+        color: navy;
         font-weight: bolder;
-        font: tahoma;
         font-size: larger;
-    }
+      }
 }   
