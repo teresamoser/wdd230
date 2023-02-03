@@ -104,69 +104,71 @@
         </div>
 
 <!-- Contact Us Form -->
-    <main class="main" >
-    <h1>Contact Us Form</h1>
-        <form method="get" oninput="result.value=parseInt(a.value)"></form>
-            <div id="formmessage"></div>
-            <label>Star Rating:</label>     
-                <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" value="5" required>
-                        <label for="fivestar"></label>   
-                    <input type="radio" id="fourstar" name="stars" value="4" required>
-                        <label for="fourstar"></label>      
-                    <input type="radio" id="threestar" name="stars" value="3" required>
-                        <label for="threestar"></label>   
-                    <input type="radio" id="twostar" name="stars" value="2" required>
-                        <label for="twostar"></label>  
-                    <input type="radio" id="onestar" name="stars" value="1" required>
-                        <label for="onestar"></label>    
-                </div>
-            <label for="fullname">Name:</label>
-                <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
-            <label for="email">Email address:</label>
-                <input type="email" id="email" name="email" required />
-            <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" required oninvalid="this.setCustomValidity('Please enter a valid phone number!')"  oninput="this.setCustomValidity('')"/>
-            <label for="keyphrase">User Name:</label>
-                <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
-            <label for="keyphrase2">Re-enter User Name:</label>
-                <input type="text" id="keyphrase2" name="keyphrase2" />
-            <label for="comments">Message:</label>
-                <textarea id="comments" name="comments" required></textarea>
-            <button class="msgbtn" id="btnSubmit" type="submit">Send Message</button>
-                <input type="hidden" value="43aster">      
-        </form>
-    </main>
-        <table>
-            <caption> HTML Table Output</caption>
-            <thead>
-                <tr>
-                    <th colspan="2" scope="colgroup">Form Input</th>
-                </tr>
-                <tr>
-                    <th scope="col">Field </th>
-                    <th scope="col">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Name:  </td>
-                    <td><output name="result" for="fullname" >" "</td> 
-                </tr>
-                <tr>
-                    <td>Email:  </td>
-                    <td> "email"</td> 
-                </tr>
-                <tr>
-                    <td>Rating: </td>
-                    <td> "stars"</td> 
-                </tr>
-                <tr>
-                    <td>Username:  </td>
-                    <td>"keyphrase"</td> 
-                </tr>
-            </tbody>
-        </table>
+    <sectionb>
+        <main class="main" >
+            <h1>Contact Us Form</h1>
+                <form method="get" oninput="result.value=parseInt(a.value)"></form>
+                    <div id="formmessage"></div>
+                    <label>Star Rating:</label>     
+                        <div class="stars">
+                            <input type="radio" id="fivestar" name="stars" value="5" required>
+                                <label for="fivestar"></label>   
+                            <input type="radio" id="fourstar" name="stars" value="4" required>
+                                <label for="fourstar"></label>      
+                            <input type="radio" id="threestar" name="stars" value="3" required>
+                                <label for="threestar"></label>   
+                            <input type="radio" id="twostar" name="stars" value="2" required>
+                                <label for="twostar"></label>  
+                            <input type="radio" id="onestar" name="stars" value="1" required>
+                                <label for="onestar"></label>    
+                        </div>
+                    <label for="fullname">Name:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
+                    <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" required />
+                    <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" required oninvalid="this.setCustomValidity('Please enter a valid phone number!')"  oninput="this.setCustomValidity('')"/>
+                    <label for="keyphrase">User Name:</label>
+                        <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
+                    <label for="keyphrase2">Re-enter User Name:</label>
+                        <input type="text" id="keyphrase2" name="keyphrase2" />
+                    <label for="comments">Message:</label>
+                        <textarea id="comments" name="comments" required></textarea>
+                    <button class="msgbtn" id="btnSubmit" type="submit">Send Message</button>
+                        <input type="hidden" value="43aster">      
+                </form>
+        </main>
+                <table>
+                    <caption> HTML Table Output</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Form Input</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Field </th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name:  </td>
+                            <td><output name="result" for="fullname" >"fullname"</td> 
+                        </tr>
+                        <tr>
+                            <td>Email:  </td>
+                            <td> "email"</td> 
+                        </tr>
+                        <tr>
+                            <td>Rating: </td>
+                            <td> "stars"</td> 
+                        </tr>
+                        <tr>
+                            <td>Username:  </td>
+                            <td>"keyphrase"</td> 
+                        </tr>
+                    </tbody>
+                </table>
+    </sectionb>
         <footer >
             &copy; <a class="highlight" id="newDate"></a> Teresa Moser <br>
             <a class="highlight" id="lastModified"> </a>

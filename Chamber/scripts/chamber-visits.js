@@ -1,11 +1,9 @@
 // initialize display elements
-const visitsDisplay = document.querySelector("#visits");
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
 
 // get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls")); 
-// Using the Number() function ensures that if the storage item 
-//does not exist, it will be converted into a zero (0) which 
-//helps on the if block condition.
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
