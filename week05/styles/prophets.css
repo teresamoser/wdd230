@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
   font-size: 16px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
 header,
@@ -21,7 +21,7 @@ h1 {
 h2 {
   color: navy;
   margin: 0 0 1rem 0;
-	 border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
 }
 
 h3 {
@@ -46,6 +46,13 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.cards {
+	margin-left: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+}
+
 section {
   margin: 0.25rem;
   padding: 0.35rem;
@@ -59,9 +66,9 @@ section > p {
   min-height: 60px;
 }
 
-img {
+section img {
   width: auto;
-	max-width: 325px;
+  max-width: 325px;
   box-shadow: 0 0 30px #777;
   height: 200px;
   border: 1px solid #333;
