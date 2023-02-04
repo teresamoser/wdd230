@@ -1,0 +1,12 @@
+{
+ "familyName" : "Moser" ,
+ "movedInDate" : "07 Sept 22",
+ "numberOfRecords" : "6" ,
+ "visitedByBishopric" : "Yes",
+ "familyMembers" : [
+    {"name" : "Nephi Smith",
+     "gender" : "Male",
+     "birthdate" : "12 Oct 1991"
+     } 
+ ]
+}
