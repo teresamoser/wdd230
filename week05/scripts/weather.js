@@ -15,7 +15,7 @@ fetch(myURL)
     .then((data) => displayData(data));
 
     function displayData(data) {
-        console.log(data)
+        // console.log(data)
         myTown.innerHTML = data.name
         myGraphic.src=`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
         myGraphic.alt = data.weather[0].main
