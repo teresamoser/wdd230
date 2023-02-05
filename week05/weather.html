@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/weather.css">
     <title>API Weather Data</title>
 </head>
 <body>
+    <main>
     <h1>OpenWeatherMap.org API Test</h1>
-        <!-- <main>
-            <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-            <figure>
-            <img id="weather-icon" src="iconsrc" alt="image of weather">
-            <figcaption></figcaption>
-        </figure>
-        </main> -->
-
-        <div></div>
+         <div class="card">
+            <h2 id="town"></h2>
+            <img id="graphic" src="" alt="image of weather">
+            <p id="description"></p>
+            <h2><p id="temperature"></p></h2>
+        </div>
+    </main>
+<br>
     <footer>
     Teresa Moser | OpenWeatherMap.org | CC BY-SA 4.0
     </footer>
-    <script scr="scripts/"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
