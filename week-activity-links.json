@@ -1,8 +1,9 @@
 {
     "week01": ["week01/holygrail.html", "week01/media-query.html"],
-    "week02": ["week02/bom.html", "week02/design.html"],
-    "week03": ["week03/03bom.html", "week03/lazyload.html"],
-    "week04": ["week04/tablebuild.html"],
-    "week05": ["week05/prophets.html", "week05/weather.html"]
-
+    "week02": ["week02/bom.html", "week02/design.html", "https://codepen.io/mosert/pen/MWBmGwX"],
+    "week03": ["week03/03bom.html", "week03/lazyload.html","https://codepen.io/mosert/pen/YzjYPqv?editors=1100"],
+    "week04": ["week04/tablebuild.html","https://codepen.io/mosert/pen/mdjxvXg", "https://teresamoser.github.io/wdd230/form-start/index.html"],
+    "week05": ["week05/prophets.html", "week05/weather.html","https://codepen.io/mosert/pen/gOjqzEE", "https://teresamoser.github.io/wdd230/week05/new-ward-members.json"],
+    "week06": [],
+    "week07": []
 }
