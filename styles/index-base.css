@@ -171,6 +171,7 @@ h2 {
   gap: 1.5rem;
   background:rgb(236, 225, 195);
   grid-row: 2;
+  font-size: large;
   }
 .card2 {
   text-align: center;
