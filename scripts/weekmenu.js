@@ -10,7 +10,7 @@ function change_myselect(sel) {
       text += "</table>"    
       document.getElementById("demo").innerHTML = text;
     }
-    xmlhttp.open("POST", "week-activity-links.json", true);
+    xmlhttp.open("POST", "wdd230/week-activity-links.json", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("x=" + dbParam);
   }
