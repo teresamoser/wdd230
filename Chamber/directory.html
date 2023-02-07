@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigby Chamber of Commerce</title>
+    <meta name="description" content="Rigby Chamber of Commerce Project for WDD 230.
+             This page will display what I am learning." />
+    <meta name="author" content="Teresa Moser" />
+        
+     <!----Social Media HTML-->
+     <meta property="og:title" content="Teresa Moser Portal for WDD230" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content=" " />
+     <meta property="og:images" content="images/main-street-rigby.webp" loading="lazy" width="600" height="400" alt="Old Rigby Main St"/>
+     
+     <!---Favicon -->
+     <link rel="icon" href="images/community.png">
+
+    <!--Style sheet links-->
+     <link rel="stylesheet" href="Styles/Chamber-base.css">
+     <link rel="stylesheet" href="Styles/chamber-large.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap">
+</head>
+<body>
+    <main width="760px" viewport="center">
+        <header>
+            <h1>Rigby Chamber of Commerce</h1>
+            <button>≡</button>
+                <nav> 
+                    <ul class="menu">
+                        <li title="home">
+                            <a href="Chamber-index.html" id="menu-button"> Home </a>
+                        </li>
+                        <li title="discover">
+                            <a href="discover.html" class="menu-item"> Discover </a>
+                        </li>
+                        <li title="about">
+                            <a href="#" class="menu-item"> Directory </a>
+                        </li>
+                        <li title="contact">
+                            <a href="join.html" class="menu-item"> Join </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p><img src="images/main-street-rigby.webp" loading="lazy" width="600" height="400" alt="Quality Store"/><br>
+                     <a href="join.html" class="join-button">Join the Chamber</a><br>
+                </p>
+            
+        </header>
+
+
+    </main>
+        <footer>
+            <p> &copy;
+                <script>document.write(new Date().getFullYear())</script>
+                Rigby Chamber Of Commerce<br>
+                Teresa Moser  WDD 230 Project 
+            </p>
+            <p class="highlight" id="lastModified">
+                <script>
+                const date = new Date(document.lastModified);
+                document.getElementById("lastModified").innerHTML = date; 
+                </script>
+            </p>
+        </footer> 
+             <!---Javascript files-->
+     <scripts src="scripts/chamber-menu.js"></scripts> 
+     <scripts src="scripts/chamber-visits.js" ></scripts> 
+</body>
+</html>
