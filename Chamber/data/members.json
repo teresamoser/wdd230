@@ -3,43 +3,50 @@
             "address" : "480 Rigby Lake Dr",
             "phone" : "208-745-1090",
             "webSite" : "http://www.amerititle.com/",
-            "membershipLevel" : "Bronze"
+            "membershipLevel" : "Bronze",
+            "image" : "wdd230/Chamber/images/Broulim's card.jpeg"
         },      
         {   "name" : "Beehive Federal Credit Union",
             "address" : "250 South Stae",
             "phone" : "656-1000",
             "webSite" : "http://www.beehive.org/",
-            "membershipLevel" : "Gold"
+            "membershipLevel" : "Gold",
+            "image" : "wdd230/Chamber/images/Beehive Credit Union.jpeg"
         },
         {   "name" : "Broulim's Fresh Foods",
             "address" :"150 N State Street",
             "phone" : "208-745-7771",
             "webSite" : "http://www.broulims.com/",
-            "membershipLevel" : "Silver"
+            "membershipLevel" : "Silver",
+            "image" : "wdd230/Chamber/images/Broulim's card.jpeg"
         },
         {   "name" : "Challenger Supply",
             "address" :"24 N 3210 E",
             "phone" : "208-523-1969",
             "webSite" : "http://www.challengerpallet.com/",
-            "membershipLevel" : "Bronze"
+            "membershipLevel" : "Bronze",
+            "image" : "wdd230/Chamber/images/Challenger Pallet.jpeg"
         },
         {   "name" : "Eckersells Funeral Home",
             "address" :"101 W Main St",
             "phone" : "208-745-6604",
             "webSite" : "http://eckersellfuneralhome.com/",
-            "membershipLevel" : "NP non-profit"
+            "membershipLevel" : "NP non-profit",
+            "image" : "wdd230/Chamber/images/Eckersells.jpeg"
         },
         {   "name" : "Lil' Mikes Smokin BBQ",
             "address" :"116 S Clark St",
             "phone" : "208-534-1802",
             "webSite" : "http://www.lilmikesbbq.com/",
-            "membershipLevel" : "Silver"
+            "membershipLevel" : "Silver",
+            "image" : "wdd230/Chamber/images/BBQ.jpeg"
         },  
         {   "name" : "Yellowstone Log Homes, LLC",
             "address" :"280 North Yellowstone Hwy",
             "phone" : "208-745-8108",
-            "webSite" : "http://www.yellowstoneloghomes.com/",
-            "membershipLevel" : "Gold"
+            "webSite"  : "http://www.yellowstoneloghomes.com/",
+            "membershipLevel" : "Gold",
+            "image" : "wdd230/Chamber/images/Log Home.jpeg"
         }
     ]
 }
