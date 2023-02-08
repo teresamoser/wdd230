@@ -47,8 +47,7 @@
     color:black;
   }
 
-/* Menu code below */
-  
+/* Menu code below */  
   nav  {
     /* display: none;  */
     position: absolute;
@@ -92,9 +91,7 @@
   .close::before {
     content: " ❌ ";
     }
-
 /*end of menu*/
-
 
   main {
     display: grid;
@@ -106,7 +103,6 @@
     color: #000;
     margin: auto;
   }
-  
   section {
     color: black;;
     border-color:rgb(77, 24, 24);
@@ -116,11 +112,9 @@
     border-radius: 25px;
     background-color:#a9927d ;
     gap: 1.5rem;
-
   }
 
   /* Discover page css */
-
   .main-content img{
     display: flex;
     border-color:rgb(236, 225, 195);
@@ -139,7 +133,27 @@
   }
 /* Discover page css  end */
 
+/* Directory page css  */
+#cards {
+	display: grid;
+  grid-gap: .5rem;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 1rem;  
+}
+#cards section {
+  border: solid;
+  background-color: rgb(194, 192, 239); 
+}
+#cards image {
+  width: auto;
+  box-shadow: 0 0 30px #3e3b3b;
+  height: 250px;
+}
+/* Directory page end */
+
+
 /* Join page css */
+
 /*  --FORM-- */
 form fieldset {
     margin: 2rem 0;
