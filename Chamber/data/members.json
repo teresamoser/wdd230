@@ -1,38 +1,45 @@
-{"chamberMembers" :
-   
-    {"name" : "AmeriTitle",
-        "address" : "480 Rigby Lake Dr",
-        "phone" : "208-745-1090",
-        "webPage" : "http://www.amerititle.com/"}     
-
-    {"name" : "Beehive Federal Credit Union",
-        "address" : "250 South Stae",
-        "phone" : "656-1000",
-        "webPage" : "http://www.beehive.org/"}
-
-    {"name" : "Broulim's Fresh Foods",
-        "address" :"150 N State Street",
-        "phone" : "208-745-7771",
-        "webPage" : "http://www.broulims.com/"}
- 
-    {"name" : "Challenger Supply",
-        "address" :"24 N 3210 E",
-        "phone" : "208-523-1969",
-        "webPage" : "http://www.challengerpallet.com/"}
-
-    {"name" : "Eckersells Funeral Home",
-        "address" :"101 W Main St",
-        "phone" : "208-745-6604",
-        "webPage" : "http://eckersellfuneralhome.com/"}
- 
-    {"name" : "Lil' Mikes Smokin BBQ",
-        "address" :"116 S Clark St",
-        "phone" : "208-534-1802",
-        "webPage" : "http://www.lilmikesbbq.com/"}
- 
-   {"name" : "Yellowstone Log Homes, LLC",
-        "address" :"280 North Yellowstone Hwy",
-        "phone" : "208-745-8108",
-        "webPage" : "http://www.yellowstoneloghomes.com/"}
-
+{"chamberMembers" : [   
+        {   "name" : "AmeriTitle",
+            "address" : "480 Rigby Lake Dr",
+            "phone" : "208-745-1090",
+            "webPage" : "http://www.amerititle.com/",
+            "membershipLevel" : "Bronze"
+        },      
+        {   "name" : "Beehive Federal Credit Union",
+            "address" : "250 South Stae",
+            "phone" : "656-1000",
+            "webPage" : "http://www.beehive.org/",
+            "membershipLevel" : "Gold"
+        },
+        {   "name" : "Broulim's Fresh Foods",
+            "address" :"150 N State Street",
+            "phone" : "208-745-7771",
+            "webPage" : "http://www.broulims.com/",
+            "membershipLevel" : "Silver"
+        },
+        {   "name" : "Challenger Supply",
+            "address" :"24 N 3210 E",
+            "phone" : "208-523-1969",
+            "webPage" : "http://www.challengerpallet.com/",
+            "membershipLevel" : "Bronze"
+        },
+        {   "name" : "Eckersells Funeral Home",
+            "address" :"101 W Main St",
+            "phone" : "208-745-6604",
+            "webPage" : "http://eckersellfuneralhome.com/",
+            "membershipLevel" : "NP non-profit"
+        },
+        {   "name" : "Lil' Mikes Smokin BBQ",
+            "address" :"116 S Clark St",
+            "phone" : "208-534-1802",
+            "webPage" : "http://www.lilmikesbbq.com/",
+            "membershipLevel" : "Silver"
+        },  
+        {   "name" : "Yellowstone Log Homes, LLC",
+            "address" :"280 North Yellowstone Hwy",
+            "phone" : "208-745-8108",
+            "webPage" : "http://www.yellowstoneloghomes.com/",
+            "membershipLevel" : "Gold"
+        }
+    ]
 }
