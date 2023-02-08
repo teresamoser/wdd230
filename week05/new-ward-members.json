@@ -1,12 +1,34 @@
 {
- "familyName" : "Moser" ,
+ "familyName" : "Potter" ,
  "movedInDate" : "07 Sept 22",
  "numberOfRecords" : "6" ,
  "visitedByBishopric" : "Yes",
  "familyMembers" : [
-    {"name" : "Nephi Smith",
-     "gender" : "Male",
-     "birthdate" : "12 Oct 1991"
-     } 
- ]
+
+        {"name" : "Harry",
+        "gender" : "Male",
+        "birthdate" : "13 Oct 1990"
+        }, 
+        {"name" : "Hermione",
+        "gender" : "Female",
+        "birthdate" : "16 April 1992"
+        }, 
+        {"name" : "Tonks",
+        "gender" : "Female",
+        "birthdate" : "28 Jan 1994"
+        }, 
+        {"name" : "Ron",
+        "gender" : "Male",
+        "birthdate" : "16 June 1996"
+        }, 
+        {"name" : "Ginny",
+        "gender" : "Female",
+        "birthdate" : "18 March 1998"
+        }, 
+        {"name" : "Neville",
+        "gender" : "Male",
+        "birthdate" : "3 May 2000"
+        }
+    
+    ]
 }
