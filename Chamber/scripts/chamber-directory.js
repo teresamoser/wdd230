@@ -21,8 +21,8 @@ const displayDirectory = (members) => {
     let name = document.createElement('h2'); 
     let address = document.createElement('address');
     let phone = document.createElement('phone');
-    let webSite = document.createElement('website');
-    let membershipLevel = document.createElement('membershipLevel')
+    let web = document.createElement('webSite');
+    let level = document.createElement('membershipLevel')
 
     // Build the h2 content out to show the prophet's full name
     name.textContent = `${members.name}`;
@@ -40,8 +40,8 @@ const displayDirectory = (members) => {
     card.appendChild(name); 
     card.appendChild(address);
     card.appendChild(phone);
-    card.appendChild(webSite);
-    card.appendChild(membershipLevel);
+    card.appendChild(web);
+    card.appendChild(level);
 
     cards.appendChild(card);
   });

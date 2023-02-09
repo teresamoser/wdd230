@@ -1,9 +1,85 @@
 {
-    "week01": ["week01/holygrail.html", "week01/media-query.html"],
-    "week02": ["week02/bom.html", "week02/design.html", "https://codepen.io/mosert/pen/MWBmGwX"],
-    "week03": ["week03/03bom.html", "week03/lazyload.html","https://codepen.io/mosert/pen/YzjYPqv?editors=1100"],
-    "week04": ["week04/tablebuild.html","https://codepen.io/mosert/pen/mdjxvXg", "https://teresamoser.github.io/wdd230/form-start/index.html"],
-    "week05": ["week05/prophets.html", "week05/weather.html","https://codepen.io/mosert/pen/gOjqzEE", "week05/new-ward-members.json"],
-    "week06": [],
-    "week07": []
+    "weeks" : [
+      {
+        "week1" : "Week 1",
+        "links1" : [
+          {
+            "url":"https://teresamoser.github.io/wdd230/week01/holygrail.html",
+            "title":"Holy Grail Layout"
+          },
+          {
+            "url":"https://teresamoser.github.io/wdd230/week01/media-query.html",
+            "title":"Media Query"
+          }
+        ],
+        "week2" : "Week 2",
+        "links2" : [
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week02/design.html",
+                "title" : "Design"
+            },
+            {
+                "url" : "https://codepen.io/mosert/pen/MWBmGwX",
+                "title" : "CodePen Menu"
+            },
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week02/bom.html",
+                "title" : "Book of Mormon"
+            }
+        ],
+        "week3" : "Week 3",
+        "links3" : [
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week03/images/landscape.webp",
+                "title" : "Landscape"
+            },
+            {
+                "url" : "http://teresamoser.github.io/wdd230/week03/lazyload.html",
+                "title" : "Lazy Load"
+            },
+            {
+                "url" : "https://codepen.io/mosert/pen/YzjYPqv?editors=1100",
+                "title" : "CodePen Winter"
+            }
+        ],
+        "week4" : "Week 4",
+        "links4" : [
+            {
+                "url" : "https://codepen.io/mosert/pen/mdjxvXg",
+                "title" : "Pseudo-classes"
+            },
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week04/tablebuild.html",
+                "title" : "ACME Table"
+            },
+            {
+                "url" : "https://teresamoser.github.io/wdd230/form-start/index.html",
+                "title" : "Form"
+            },
+            {
+                "url" : "week04/images/W3Schools.webp",
+                "title" : "W3Schools"
+            }
+        ],
+        "week5" : "Week 5",
+        "links5" : [
+            {
+                "url" : "https://codepen.io/mosert/pen/gOjqzEE",
+                "title" : "Pseudo Elements"
+            },
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week05/new-ward-members.json",
+                "title" : "JSON file"
+            },
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week05/weather.html",
+                "title" : "Weather App"
+            },
+            {
+                "url" : "https://teresamoser.github.io/wdd230/week05/prophets.html",
+                "title" : "Prophets"
+            }
+        ]
+      }
+    ]  
 }

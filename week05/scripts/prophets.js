@@ -31,9 +31,9 @@ const displayProphets = (prophets) => {
 
     // Append the section(card) with the created elements
     card.appendChild(fullName); //fill in the blank
-    card.appendChild(portrait);
     card.appendChild(birth);
     card.appendChild(place);
+    card.appendChild(portrait);
 
     cards.appendChild(card);
   });
