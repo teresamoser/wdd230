@@ -90,7 +90,12 @@
       }
 
       /* Directory page css */
-      
-      
+
+    #menu button, article#cards { 
+        grid: center;
+       
+    }
+ 
+
 
 }   

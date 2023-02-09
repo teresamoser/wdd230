@@ -138,6 +138,7 @@
 
 
 /* Directory page css  */
+
 #cards {
 	display: grid;
   grid-gap: .5rem;
@@ -146,13 +147,64 @@
 }
 #cards section {
   border: solid;
-  background-color: rgb(194, 192, 239); 
+  background-color: #aa9888; 
 }
 #cards image {
   width: auto;
   box-shadow: 0 0 30px #3e3b3b;
   height: 250px;
 }
+#menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #aa9888;
+	text-align: center;
+}
+#menu button {
+	padding: 5px;
+	font-weight: 700;
+  font-size: medium;
+}
+#menu button:hover{
+	background-color: rgb(136, 113, 113);
+  cursor: pointer;
+}
+
+article,
+section {
+	margin: 0.5rem;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #aa9888;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid {
+	font-family: Tahoma, cursive;
+}
+
+section {
+	font-size: 1.5rem;
+}
+
 /* Directory page end */
 
 
