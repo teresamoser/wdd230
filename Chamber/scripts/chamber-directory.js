@@ -17,7 +17,7 @@ const displayDirectory = (members) => {
 
     // Create elements to add to the div.cards element
     let card = document.createElement('section');
-    let image = document.createElement('image');
+    let icon = document.createElement('image');
     let name = document.createElement('h2'); 
     let address = document.createElement('address');
     let phone = document.createElement('phone');
@@ -28,15 +28,15 @@ const displayDirectory = (members) => {
     name.textContent = `${members.name}`;
 
     // Build the image portrait by setting all the relevant attributes
-    image.setAttribute('src', members.image);
-    image.setAttribute('alt', `membername ${members.name}`); 
-    image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '100');
-    image.setAttribute('height', '200');
+    icon.setAttribute('src', members.image);
+    icon.setAttribute('alt', `membername ${members.name}`); 
+    icon.setAttribute('loading', 'lazy');
+    icon.setAttribute('width', '100');
+    icon.setAttribute('height', '200');
 
 
     // Append the section(card) with the created elements
-    card.appendChild(image);
+    card.appendChild(icon);
     card.appendChild(name); 
     card.appendChild(address);
     card.appendChild(phone);
