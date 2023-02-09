@@ -1,19 +1,19 @@
-const url = "wdd230/Chamber/scripts/chamber-directory.js"
+const url = "wdd230/Chamber/data/members.json"
 const cards = document.querySelector('#cards');
 
 async function getDirectoryData() {
   const response = await fetch(url);
   const data = await response.json();
-  // console.table(data.chamberMembers);
-  displayDirectory(data.chamberMembers); // note that we reference the prophets array of the JSON data object, not just the object
+  console.table(data.members);
+  displayDirectory(data.members); // note that we reference the prophets array of the JSON data object, not just the object
 }
 
 getDirectoryData();
 
-const displayDirectory = (chamberMembers) => {
+const displayDirectory = (members) => {
 
   // card build code goes here
-  chamberMembers.forEach((chamberMembers) => {
+  members.forEach((members) => {
 
     // Create elements to add to the div.cards element
     let card = document.createElement('section');
@@ -25,11 +25,11 @@ const displayDirectory = (chamberMembers) => {
     let membershipLevel = document.createElement('membershipLevel')
 
     // Build the h2 content out to show the prophet's full name
-    name.textContent = `${chamberMembers.name}`;
+    name.textContent = `${members.name}`;
 
     // Build the image portrait by setting all the relevant attributes
-    image.setAttribute('src', chamberMembers.image);
-    image.setAttribute('alt', `membername ${chamberMembers.name}`); 
+    image.setAttribute('src', members.image);
+    image.setAttribute('alt', `membername ${members.name}`); 
     image.setAttribute('loading', 'lazy');
     image.setAttribute('width', '100');
     image.setAttribute('height', '200');
