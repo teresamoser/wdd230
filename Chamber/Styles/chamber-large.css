@@ -64,7 +64,7 @@
         text-align: center;
         } 
          
- /* Discover page css */
+/* Discover page css */
     .main-content {
         flex: 3;
         margin-left: 400px;
@@ -89,12 +89,18 @@
         top: 41rem;
       }
 
-      /* Directory page css */
+/* Directory page css */
 
-    #menu button, article#cards { 
-        grid: center;
-       
+    #cards {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        padding: 1rem; 
+        }
+    #directory {
+           
     }
+
  
 
 

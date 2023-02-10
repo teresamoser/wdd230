@@ -15,13 +15,13 @@
     background: #49111C;
     color: White;
   }
-  header button {
-
+  #button{
     height: 48px;
     width: 48px;
     font-size: 2rem;
     background-color:#a9927d;
   }
+
   header img{
     display: flex;
     border-color:rgb(236, 225, 195);
@@ -89,10 +89,10 @@
   nav.open {
     display: block;
   } 
-  button::before {
+  #button::before {
     content: " ≡ "
   }
-  .close::before {
+  #button.close::before {
     content: " ❌ ";
 
     }
@@ -120,6 +120,7 @@
   }
 
   /* Discover page css */
+
   .main-content img{
     display: flex;
     border-color:rgb(236, 225, 195);
@@ -146,47 +147,35 @@
 
 /* Directory page css  */
 
-#cards {
-	display: grid;
-  grid-gap: .5rem;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  padding: 1rem;  
-}
 #cards section {
   border: solid;
-  background-color: #aa9888; 
+  background-color: #aa9888;
 }
+
 #cards image {
   width: auto;
   box-shadow: 0 0 30px #3e3b3b;
   height: 250px;
 }
+
 #directory {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: #aa9888;
-	text-align: center;
+  height: fit-content;
 }
+
 #directory button {
 	padding: 5px;
 	font-weight: 700;
   font-size: medium;
+  display: 
 }
+
 #directory button:hover{
 	background-color: rgb(136, 113, 113);
   cursor: pointer;
-}
-
-article,
-section {
-	margin: 0.5rem;
-}
-
-section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #aa9888;
 }
 
 .grid {
@@ -206,10 +195,6 @@ section {
 
 .grid {
 	font-family: Tahoma, cursive;
-}
-
-section {
-	font-size: 1.5rem;
 }
 
 /* Directory page end */

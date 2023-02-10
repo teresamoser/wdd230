@@ -4,7 +4,7 @@ const cards = document.querySelector('#cards');
 async function getDirectoryData() {
   const response = await fetch(url);
   const data = await response.json();
-  // console.table(data.members);
+  console.table(data.members);
   displayDirectory(data.members);
   }
 
@@ -16,7 +16,7 @@ const displayDirectory = (members) => {
 
     let card = document.createElement('section');
     let icon = document.createElement('img');
-    let name = document.createElement('h5'); 
+    let name = document.createElement('h2'); 
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let web = document.createElement('p');
@@ -43,21 +43,21 @@ const displayDirectory = (members) => {
     card.appendChild(level);
 
     cards.appendChild(card);
+
+
   });
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-  gridbutton.addEventListener("click", () => {
-    display.displayDirectory.add("grid");
-    display.displayDirectory.remove("list");
-  });
+  gridbutton.addEventListener("click", () => { 
+      display.cards.add("grid");
+      display.cards.remove("list");
+    });
 
-  listbutton.addEventListener("click", displayDirectory1); 
-
-  function displayDirectory1() {
-    display.cards.add("list");
-    display.cards.remove("grid");
-  }
+  listbutton.addEventListener("click", () => {
+      display.table.add("list");
+      display.table.remove("grid");
+    });
 }
