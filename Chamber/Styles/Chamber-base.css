@@ -16,6 +16,7 @@
     color: White;
   }
   header button {
+
     height: 48px;
     width: 48px;
     font-size: 2rem;
@@ -49,7 +50,7 @@
 
 /* Menu code below */  
   nav  {
-    /* display: none;  */
+    display: none; 
     position: absolute;
     top: 100px;
     right: 0px;
@@ -87,9 +88,13 @@
   } 
   nav.open {
     display: block;
-  }  
+  } 
+  button::before {
+    content: " ≡ "
+  }
   .close::before {
     content: " ❌ ";
+
     }
 /*end of menu*/
 
