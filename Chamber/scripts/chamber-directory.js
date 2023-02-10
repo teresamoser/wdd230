@@ -6,7 +6,7 @@ async function getDirectoryData() {
   const data = await response.json();
   // console.table(data.members);
   displayDirectory(data.members);
-}
+  }
 
 getDirectoryData();
 
@@ -14,21 +14,26 @@ const displayDirectory = (members) => {
  
   members.forEach((members) => {
 
-    let card = document.createElement('section', members);
-    let icon = document.createElement('image', members.image);
-    let name = document.createElement('h2', members.name); 
-    let address = document.createElement('address', members.address);
-    let phone = document.createElement('phone', members.phone);
-    let web = document.createElement('website', members.website);
-    let level = document.createElement('membershipevel', members.membershiplevel)
+    let card = document.createElement('section');
+    let icon = document.createElement('img');
+    let name = document.createElement('h5'); 
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let web = document.createElement('p');
+    let level = document.createElement('p')
  
     name.textContent = `${members.name}`;
+    address.innerHTML = `<strong>Address</strong>: ${members.address}`;
+    phone.innerHTML = `<strong>Phone #</strong>: ${members.phone}`;
+    web.innerHTML = `<strong>Website </strong>: ${members.website}`;
+    level.innerHTML = `<strong>Membership Level </strong>: ${members.membershiplevel}`;
+
 
     icon.setAttribute('src', members.image);
-    icon.setAttribute('alt', `membername ${members.name}`); 
+    icon.setAttribute('alt', `logo ${members.name}`); 
     icon.setAttribute('loading', 'lazy');
-    icon.setAttribute('width', '100');
-    icon.setAttribute('height', '200');
+    icon.setAttribute('width', '200');
+    icon.setAttribute('height', '100');
 
     card.appendChild(icon);
     card.appendChild(name); 
@@ -39,20 +44,20 @@ const displayDirectory = (members) => {
 
     cards.appendChild(card);
   });
-}
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-gridbutton.addEventListener("click", () => {
-	display.displayDirectory.add("grid");
-	display.displayDirectory.remove("list");
-});
+  gridbutton.addEventListener("click", () => {
+    display.displayDirectory.add("grid");
+    display.displayDirectory.remove("list");
+  });
 
-listbutton.addEventListener("click", displayDirectory1); 
+  listbutton.addEventListener("click", displayDirectory1); 
 
-function displayDirectory1() {
-	display.cards.add("list");
-	display.cards.remove("grid");
+  function displayDirectory1() {
+    display.cards.add("list");
+    display.cards.remove("grid");
+  }
 }
