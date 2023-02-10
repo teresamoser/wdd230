@@ -74,6 +74,9 @@ nav a {
   } 
  nav.open {
   display: block;
+  }
+  button::before {
+    content: " ≡ "
   }  
 .close::before {
   content: " ❌ ";
