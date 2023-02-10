@@ -1,10 +1,10 @@
-const url = "wdd230/Chamber/data/members.json"
+const url = "data/members.json"
 const cards = document.querySelector('#cards');
 
 async function getDirectoryData() {
   const response = await fetch(url);
   const data = await response.json();
-  console.table(data.members);
+  // console.table(data.members);
   displayDirectory(data.members);
 }
 
@@ -19,7 +19,7 @@ const displayDirectory = (members) => {
     let name = document.createElement('h2', members.name); 
     let address = document.createElement('address', members.address);
     let phone = document.createElement('phone', members.phone);
-    let web = document.createElement('website', memebers.website);
+    let web = document.createElement('website', members.website);
     let level = document.createElement('membershipevel', members.membershiplevel)
  
     name.textContent = `${members.name}`;
@@ -50,9 +50,9 @@ gridbutton.addEventListener("click", () => {
 	display.displayDirectory.remove("list");
 });
 
-listbutton.addEventListener("click", displayDirectory); 
+listbutton.addEventListener("click", displayDirectory1); 
 
-function displayDirectory() {
+function displayDirectory1() {
 	display.cards.add("list");
 	display.cards.remove("grid");
 }

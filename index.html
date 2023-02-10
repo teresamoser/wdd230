@@ -122,12 +122,15 @@
         </div>
 
 <!-- Contact Us Form -->
-    <sectionb>
+    <section id="contact">
         <main class="main" >
             <h1>Contact Us Form</h1>
-                <form method="get" oninput="result.value=parseInt(a.value)"></form>
+            <form method="get" oninput="result.value=parseInt(a.value)">
+                </form>
                     <div id="formmessage"></div>
-                    <label>Star Rating:</label>     
+
+                    <label>Star Rating:</label> 
+
                         <div class="stars">
                             <input type="radio" id="fivestar" name="stars" value="5" required>
                                 <label for="fivestar"></label>   
@@ -140,6 +143,7 @@
                             <input type="radio" id="onestar" name="stars" value="1" required>
                                 <label for="onestar"></label>    
                         </div>
+
                     <label for="fullname">Name:</label>
                         <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
                     <label for="email">Email address:</label>
@@ -152,9 +156,8 @@
                         <input type="text" id="keyphrase2" name="keyphrase2" />
                     <label for="comments">Message:</label>
                         <textarea id="comments" name="comments" required></textarea>
-                    <button class="msgbtn" id="btnSubmit" type="submit">Send Message</button>
-                        <input type="hidden" value="43aster">      
-                </form>
+                <button class="msgbtn" id="btnSubmit" type="submit">Send Message</button>
+                    <input type="hidden" value="43aster">              
         </main>
                 <table>
                     <caption> HTML Table Output</caption>
@@ -186,7 +189,7 @@
                         </tr>
                     </tbody>
                 </table>
-    </sectionb>
+    </section>
         <footer >
             &copy; <a class="highlight" id="newDate"></a> Teresa Moser <br>
             <a class="highlight" id="lastModified"> </a>
