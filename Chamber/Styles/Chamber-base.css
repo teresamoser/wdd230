@@ -170,7 +170,7 @@
 	padding: 5px;
 	font-weight: 700;
   font-size: medium;
-  display: 
+  
 }
 
 #directory button:hover{
@@ -196,12 +196,42 @@
 .grid {
 	font-family: Tahoma, cursive;
 }
+.list {
+	display: flex;
+	flex-direction: column;
+}
 
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
 /* Directory page end */
 
 
 /* Join page css */
-
 /*  --FORM-- */
 form fieldset {
     margin: 2rem 0;

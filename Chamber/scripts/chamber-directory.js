@@ -20,14 +20,13 @@ const displayDirectory = (members) => {
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let web = document.createElement('p');
-    let level = document.createElement('p')
- 
+    let level = document.createElement('p');
+
     name.textContent = `${members.name}`;
     address.innerHTML = `<strong>Address</strong>: ${members.address}`;
     phone.innerHTML = `<strong>Phone #</strong>: ${members.phone}`;
     web.innerHTML = `<strong>Website </strong>: ${members.website}`;
     level.innerHTML = `<strong>Membership Level </strong>: ${members.membershiplevel}`;
-
 
     icon.setAttribute('src', members.image);
     icon.setAttribute('alt', `logo ${members.name}`); 
@@ -43,21 +42,20 @@ const displayDirectory = (members) => {
     card.appendChild(level);
 
     cards.appendChild(card);
-
-
   });
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
+    const display = document.querySelector("article");
 
-  gridbutton.addEventListener("click", () => { 
-      display.cards.add("grid");
-      display.cards.remove("list");
+    gridbutton.addEventListener("click", () => {
+      display.classList.add("grid");
+      display.classList.remove("list");
     });
 
-  listbutton.addEventListener("click", () => {
-      display.table.add("list");
-      display.table.remove("grid");
-    });
+    listbutton.addEventListener("click", showList); 
+    function showList() {
+      display.classList.add("list");
+      display.classList.remove("grid");
+    }
 }
