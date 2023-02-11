@@ -151,13 +151,11 @@
   border: solid;
   background-color: #aa9888;
 }
-
 #cards image {
   width: auto;
   box-shadow: 0 0 30px #3e3b3b;
   height: 250px;
 }
-
 #directory {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -165,69 +163,59 @@
 	background-color: #aa9888;
   height: fit-content;
 }
-
 #directory button {
 	padding: 5px;
 	font-weight: 700;
-  font-size: medium;
-  
-}
+  font-size: medium; 
 
+}
 #directory button:hover{
 	background-color: rgb(136, 113, 113);
   cursor: pointer;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
+	
 }
-
 .grid section {
+  max-width: 460px;
 	flex-direction: column;
 	text-align: center;
 }
-
 .grid section > * {
 	margin: 0.1rem;
 }
-
 .grid {
 	font-family: Tahoma, cursive;
 }
+
 .list {
 	display: flex;
-	flex-direction: column;
 }
-
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	/* display: grid; */
+	grid-template-columns: 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
-
 .list section > * {
 	margin: 0 1rem;
+  text-align: justify;
 }
-
 .list section img {
 	display: none; /* smaller viewports only */
 }
-
 .list section h3 {
 	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: Tahoma, Helvetica, sans-serif;
 }
-
 .list section:nth-child(even) {
 	background-color: #bed;
 }
-
 section h3 {
 	font-size: 1.5rem;
 }
+
 /* Directory page end */
 
 

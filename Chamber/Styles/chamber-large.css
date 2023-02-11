@@ -94,17 +94,30 @@
     #cards {
         display: grid;
         grid-gap: .5rem;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(1fr)); */
         padding: 1rem; 
+        width: 100%;
         }
-    #ltable{
-        display: grid;
-        grid-gap: .5rem;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        padding: 1rem; 
-        } 
+    /* .grid section {
+        max-width: 460px;
+        flex-direction: column;
+        text-align: center;
+        }  */
 
- 
+        
+    .list {
+        display: flex;
+        }
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+        }
+    .list section > * {
+        margin: 0 1rem;
+        text-align: justify;
+        }
 
 
 }   

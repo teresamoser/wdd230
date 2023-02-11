@@ -7,11 +7,11 @@
             "image" : "images/Amerititle.jpeg"
         },      
         {   "name" : "Beehive Federal Credit Union",
-            "address" : "250 South Stae",
+            "address" : "250 South State",
             "phone" : "656-1000",
             "website" : "http://www.beehive.org/",
             "membershiplevel" : "Gold",
-            "image" : "images/Beehive Credit Union.jpeg"
+            "image" : "images/BeehiveCreditUnion.jpeg"
         },
         {   "name" : "Broulim's Fresh Foods",
             "address" :"150 N State Street",
@@ -25,13 +25,13 @@
             "phone" : "208-523-1969",
             "website" : "http://www.challengerpallet.com/",
             "membershiplevel" : "Bronze",
-            "image" : "images/Challenger Pallet.jpeg"
+            "image" : "images/ChallengerPallet.jpeg"
         },
         {   "name" : "Eckersells Funeral Home",
             "address" :"101 W Main St",
             "phone" : "208-745-6604",
             "website" : "http://eckersellfuneralhome.com/",
-            "membershiplevel" : "NP non-profit",
+            "membershiplevel" : "NP (non-profit)",
             "image" : "images/window.jpeg"
         },
         {   "name" : "Lil' Mikes Smokin BBQ",
@@ -46,7 +46,7 @@
             "phone" : "208-745-8108",
             "website"  : "http://www.yellowstoneloghomes.com/",
             "membershiplevel" : "Gold",
-            "image" : "images/Log Home.jpeg"
+            "image" : "images/LogHome.jpeg"
         }
     ]
 }
