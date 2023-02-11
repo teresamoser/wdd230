@@ -38,11 +38,11 @@
 
         <div class="hero">
             <picture>
-                <source srcset="week03/images/laie_hawaii_temple_lds-small.webp" loading="lazy" media="(max-width: 600px)">
-                <img src="week03/images/laie_hawaii_temple_lds-large.webp" loading="lazy" media="(max-width: 1000px)" alt="hero image">
-                    <div class="herolabel">
+                <source srcset="week03/images/laie_hawaii_temple_lds-small.webp" max-width=" 600px">
+                <img src="week03/images/laie_hawaii_temple_lds-large.webp" loading="lazy" max-width="1000px" alt="hero image">
+                    <a class="herolabel">
                         <p>Laie Hawaii Temple</p>
-                    </div>
+                    </a>
             </picture>
         </div>
 
@@ -104,7 +104,7 @@
                     <h3>Current Weather</h3>
                     <div class="card">
                         <p id="town"></p>
-                        <img id="graphic" src="" alt="image of weather">
+                        <img id="graphic" alt="image of weather">
                         <p id="description"></p>
                         <p id="temperature"></p>
                     </div>
@@ -123,7 +123,7 @@
 
 <!-- Contact Us Form -->
     <section id="contact">
-            <h1>Contact Us Form</h1>
+        <h2>Contact Us Form</h2>
             <form method="get" oninput="result.value=parseInt(a.value)">
                 </form>
                     <div id="formmessage"></div>
@@ -169,19 +169,19 @@
                     <tbody>
                         <tr>
                             <td>Name:  </td>
-                            <td><output name="result" for="fullname" >"fullname"</td> 
+                            <td><output name="result" for="fullname">fullname</output></td> 
                         </tr>
                         <tr>
                             <td>Email:  </td>
-                            <td> "email"</td> 
+                            <td> email</td> 
                         </tr>
                         <tr>
                             <td>Rating: </td>
-                            <td> "stars"</td> 
+                            <td> stars</td> 
                         </tr>
                         <tr>
                             <td>Username:  </td>
-                            <td>"keyphrase"</td> 
+                            <td>keyphrase</td> 
                         </tr>
                     </tbody>
                 </table>
