@@ -38,7 +38,6 @@
     margin: auto;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
     border-radius: 25px;
     padding: 14px 28px;
     width: 250px;
@@ -173,9 +172,6 @@
   cursor: pointer;
 }
 
-.grid {
-	
-}
 .grid section {
   max-width: 460px;
 	flex-direction: column;
@@ -192,8 +188,6 @@
 	display: flex;
 }
 .list section {
-	/* display: grid; */
-	grid-template-columns: 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -202,7 +196,7 @@
   text-align: justify;
 }
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none;
 }
 .list section h3 {
 	font-size: 1rem;
