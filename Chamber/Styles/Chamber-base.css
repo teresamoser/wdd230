@@ -4,8 +4,8 @@
   body {
     font-family: Tahoma, Verdana, sans-serif;
   }
-  h1 {
-    display: flex; 
+  #header {
+    display: block; 
     padding: 10px;
   }
   header {
@@ -34,7 +34,8 @@
     height: auto;
   }
   .join-button{
-    display: flex;
+    display: block;
+    text-align: center;
     margin: auto;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -145,6 +146,12 @@
 
 /* Directory page css  */
 
+#title {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  font-size: 35px;
+}
 #cards section {
   border: solid;
   background-color: #aa9888;
@@ -155,17 +162,18 @@
   height: 250px;
 }
 #directory {
+  display: block;
+  text-align: center; 
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: #aa9888;
-  height: fit-content;
+  width: fit-content;
 }
 #directory button {
-	padding: 5px;
+	padding: 10px;
 	font-weight: 700;
   font-size: medium; 
-
 }
 #directory button:hover{
 	background-color: rgb(136, 113, 113);
@@ -174,7 +182,7 @@
 
 .grid section {
   max-width: 460px;
-	flex-direction: column;
+	flex-direction: auto;
 	text-align: center;
 }
 .grid section > * {
@@ -185,11 +193,20 @@
 }
 
 .list {
-	display: flex;
+  display: block;
+  text-align: center; 
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+
+	/* background-color: #aa9888; */
+  width: fit-content;
 }
 .list section {
 	margin: 0;
 	padding: 0.25rem;
+  background-color: #aa9888;
+  max-width: 460px;
 }
 .list section > * {
 	margin: 0 1rem;
