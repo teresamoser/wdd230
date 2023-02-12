@@ -51,58 +51,58 @@
                 </p> 
         </header>
     </main>
+    <article>
+        <section>
+            <h1>Join the Rigby Chamber of Commerce</h1>
+            <form method="get" action="join-thanks.html">
+                <fieldset>
+                    <legend> Applicant Information</legend>
+                    <label class="top"> First Name* <input type="text" name="fname" required></label>
+                    <label class="top"> Last Name* <input type="text" name="lname" required></label>
+                    <label class="top"> Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top"> Business Name* <input type="text" name="busname" required></label>
+                    <label class="top"> Website <input type="url" name="url" placeholder="http://" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div>Level</div>
+                    <label class="sbs"><input type="radio" name="audience" value="npmember"> NP Membership is for non-profit organizations and there is no fee.</label>
+                    <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership </label>
+                    <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
 
-<section>
-    <h1>Join the Rigby Chamber of Commerce</h1>
-    <form method="get" action="join-thanks.html">
-        <fieldset>
-            <legend> Applicant Information</legend>
-            <label class="top"> First Name* <input type="text" name="fname" required></label>
-            <label class="top"> Last Name* <input type="text" name="lname" required></label>
-            <label class="top"> Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-            <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <label class="top"> Business Name* <input type="text" name="busname" required></label>
-            <label class="top"> Website <input type="url" name="url" placeholder="http://" required></label>
-        </fieldset>
-        <fieldset>
-            <legend>Membership Level</legend>
-            <div>Level</div>
-            <label class="sbs"><input type="radio" name="audience" value="npmember"> NP Membership is for non-profit organizations and there is no fee.</label>
-            <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership </label>
-            <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
-            <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
+                    <div>Business Licensing</div>
+                    <label class="sbs"><input type="checkbox" name="franchise" value="yes"> Franchise</label>
+                    <label class="sbs"><input type="checkbox" name="startup" value="yes"> Start-Up</label>
+                    <label class="sbs"><input type="checkbox" name="web" value="yes"> Web Master</label>
+                    <label class="sbs"><input type="checkbox" name="train" value="yes"> In-Training</label>
 
-            <div>Business Licensing</div>
-            <label class="sbs"><input type="checkbox" name="franchise" value="yes"> Franchise</label>
-            <label class="sbs"><input type="checkbox" name="startup" value="yes"> Start-Up</label>
-            <label class="sbs"><input type="checkbox" name="web" value="yes"> Web Master</label>
-            <label class="sbs"><input type="checkbox" name="train" value="yes"> In-Training</label>
+                </fieldset>
 
-        </fieldset>
-
-        <fieldset>
-            <legend>Membership Fee Payment</legend>
-            <label class="top">Enter today's Date<input type="date" name="completeDate">
-            </label>
-            <label class="top"> Payment options
-                <select name="subject">
-                    <option value=" ">Please Select &#9662;</option>
-                    <option value="monthly">Month-to-Month</option>
-                    <option value="six">Every Six Months</option>
-                    <option value="yearly">Yearly</option>
-                    <option value="two">Two year</option>
-                    <option value="four">Four year</option>
-                    <option value="six">Six year</option>
-                    <option value="Life">Lifetime</option>
-                </select>
-            </label>
-            <label class="top">How many memberships <input type="number" name="members">
-            </label>
-        </fieldset>
-        <input type="submit" value="Membership Complete" class="submitBtn">
-    </form>
-</section>
-
+                <fieldset>
+                    <legend>Membership Fee Payment</legend>
+                    <label class="top">Enter today's Date<input type="date" name="completeDate">
+                    </label>
+                    <label class="top"> Payment options
+                        <select name="subject">
+                            <option value=" ">Please Select &#9662;</option>
+                            <option value="monthly">Month-to-Month</option>
+                            <option value="six">Every Six Months</option>
+                            <option value="yearly">Yearly</option>
+                            <option value="two">Two year</option>
+                            <option value="four">Four year</option>
+                            <option value="six">Six year</option>
+                            <option value="Life">Lifetime</option>
+                        </select>
+                    </label>
+                    <label class="top">How many memberships <input type="number" name="members">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Membership Complete" class="submitBtn">
+            </form>
+        </section>
+    </article>
         <footer>
             <p> &copy;
                 <script>document.write(new Date().getFullYear())</script>

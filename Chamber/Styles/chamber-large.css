@@ -33,8 +33,23 @@
     }
 
 /* Sections Chamber Home page css */
+    article {
+        display: grid;
+        grid-template-columns: 1 / 3;
 
-    .comm-info, .weather {
+    }
+    article {
+        display: grid;
+        grid-column: 1 / 3 ;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: .5rem;
+        min-width: auto;
+        background-color: #847678;
+        color: #000;
+        margin: auto;
+        }
+
+    article.comm-info, article.weather {
         color: black;;
         padding: 1rem;
         border-color:rgb(77, 24, 24);
@@ -46,11 +61,11 @@
         grid-row: 2;
         }
 
-    .comm-info {
+    article.comm-info {
         grid-column-end: 2 span;
     }
 
-    .bus-spot1, .bus-spot2, .bus-spot3 {
+    article.bus-spot1, article.bus-spot2, article.bus-spot3 {
         color: black;;
         padding: 1rem;
         border-color:rgb(77, 24, 24);
@@ -60,6 +75,7 @@
         border-radius: 25px;
         gap: 1.5rem;
         background:#a9927d;
+        grid-template-columns: 1 / span 2 ;
         grid-row: 3;
         text-align: center;
         } 
@@ -92,29 +108,24 @@
 /* Directory page css */
 
     #directory button {
-        
         padding: 5px;
         font-weight: 700;
-        font-size: medium; 
-
+        font-size: medium;
         }
-
-    #cards {
+    .grid #cards {
         display: grid;
         grid-gap: .5rem;
         grid-template-columns: auto auto auto;
         padding: 1rem; 
         width: 100%;
         }
-        
-    .list {
-        display: flex;
+    main {
+        display:block;
         }
-    .list section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    article.list #cards {
+        display: block;
         margin: 0;
-        padding: 0.25rem;
+        padding: 0;
         }
     .list section > * {
         margin: 0 1rem;
