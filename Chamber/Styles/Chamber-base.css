@@ -230,6 +230,10 @@ article.list {
 
 /* Join page css */
 /*  --FORM-- */
+#join h1{
+  font-family: Tahoma,Verdana, Geneva, sans-serif;
+  font-size:25px;
+}
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #070707f0;
