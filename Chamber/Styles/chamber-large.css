@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 760px){
  
     header {
         width: 100%;
@@ -95,6 +95,7 @@
 
 /* Directory page css */
 
+
     #directory button {
         display: grid;
         padding: 5px;
@@ -106,15 +107,12 @@
         grid-gap: .5rem;
         grid-template-columns: auto auto auto;
         padding: 1rem; 
+        
+        }
+    article.list{
+        display: flex;
         width: 100%;
-        }
-    .list #cards {
-        display: block;
-        margin: 0;
-        padding: 0;
-        }
-    .list section > * {
-        margin: 0 1rem;
-        text-align: justify;
+        
+
         }
 }   

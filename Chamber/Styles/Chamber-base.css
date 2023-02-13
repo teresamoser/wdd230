@@ -135,9 +135,10 @@
     }
   .left-sidebar {
     float: left;
-    background-color: #aa9888;
+    background-color:#847678;;
     text-align: center;
     font-size: large;
+    margin-top: -8px;
 
     }
 /* Discover page css  end */
@@ -150,6 +151,10 @@
   height: 50px;
   padding: 10px;
   font-size: 35px;
+}
+#business{
+  background-color: #847678;
+  width: 100%;
 }
 #cards section {
   border: solid;
@@ -175,7 +180,7 @@
   font-size: medium; 
 
 }
-#directory button:hover{
+#directory button:hover , #directory button:focus {
 	background-color: rgb(136, 113, 113);
   cursor: pointer;
 }
@@ -192,19 +197,18 @@
 	font-family: Tahoma, cursive;
 }
 
-.list {
-  display: block;
+article.list {
+  display: flex;
+  flex-direction: column;
   text-align: center; 
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-  width: fit-content;
 }
 .list section {
 	margin: 0;
 	padding: 0.25rem;
   background-color: #aa9888;
-  max-width: 460px;
 }
 .list section > * {
 	margin: 0 1rem;
@@ -217,12 +221,9 @@
 	font-size: 1rem;
 	font-family: Tahoma, Helvetica, sans-serif;
 }
-.list section:nth-child(even) {
+/* .list section:nth-child(even) {
 	background-color: #bed;
-}
-section h3 {
-	font-size: 1.5rem;
-}
+} */
 
 /* Directory page end */
 
@@ -315,9 +316,8 @@ p {
   font-weight: bolder;
   font-size: larger;
   }
-
-
 /* Discover page ends  */
+
 
   footer {
     background: #5E503F;
