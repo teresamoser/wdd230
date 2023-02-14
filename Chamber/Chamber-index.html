@@ -21,6 +21,7 @@
     <!-- Style sheet links -->
      <link rel="stylesheet" href="Styles/Chamber-base.css">
      <link rel="stylesheet" href="Styles/chamber-large.css">
+     <link rel="stylesheet" href="Styles/chamber-weather.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap">
 </head>
 <body>
@@ -46,21 +47,20 @@
                 </nav>
                 <p><img src="images/main-street-rigby.webp" loading="lazy" width="600" height="400" alt="Quality Store"/><br>
                      <a href="join.html" class="join-button">Join the Chamber</a><br>
-                </p>
-            
+                </p>  
         </header>
-
             <section class="comm-info">
                 <h3>Community Information</h3>
                 <img src="images/FestivalOfTrees.png" loading="lazy" width="300" height="200" alt="Festival of Trees"/>
             </section>
             <section class="weather">
                 <h3>Weather</h3>
-                <!-- weather widget start -->
-                    <a target="_blank" href="https://www.booked.net/weather/rigby-39566">
-                        <img src="https://w.bookcdn.com/weather/picture/32_39566_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=32094&domid=w209&anc_id=14086"  alt="booked.net"/>
-                    </a>
-                <!-- weather widget end -->
+                <div class="card">
+                    <h3 id="town"></h3>
+                    <img id="graphic" src="" alt="image of weather">
+                    <p id="description"></p>
+                    <h2><p id="temperature"></p></h2>
+                </div>
             </section>
             <section class="bus-spot1">
                 <h3>Business Spotlights</h3>
@@ -95,5 +95,6 @@
              <!-- Javascript files -->
      <script src="scripts/chamber-menu.js"></script> 
      <script src="scripts/chamber-visits.js" ></script> 
+     <script src="scripts/chamber-weather.js" ></script> 
 </body>
 </html>

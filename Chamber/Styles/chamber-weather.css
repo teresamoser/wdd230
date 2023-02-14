@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    }
+    body{
+        font-family:  Tahoma, Verdana, sans-serif;
+    }
+ .card{   
+    color: black;
+    padding: 1rem;
+    /* border-color:rgb(77, 24, 24); */
+    /* border-style: solid; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    background:rgb(236, 225, 195);
+    /* text-align: center; */
+    width:auto;
+    height:auto;
+    
+ }
