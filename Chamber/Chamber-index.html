@@ -21,6 +21,7 @@
     <!-- Style sheet links -->
      <link rel="stylesheet" href="Styles/Chamber-base.css">
      <link rel="stylesheet" href="Styles/chamber-large.css">
+     <link rel="stylesheet" href="Styles/chamber-weather.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap">
 </head>
 <body>
@@ -57,10 +58,17 @@
             <section class="weather">
                 <h3>Weather</h3>
                 <!-- weather widget start -->
-                    <a target="_blank" href="https://www.booked.net/weather/rigby-39566">
+                    <!-- <a target="_blank" href="https://www.booked.net/weather/rigby-39566">
                         <img src="https://w.bookcdn.com/weather/picture/32_39566_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=32094&domid=w209&anc_id=14086"  alt="booked.net"/>
-                    </a>
+                    </a> -->
                 <!-- weather widget end -->
+                <div class="component__weather-box">
+                    <div class="component__weather-content">
+                      <div class="weather-content__overview"></div>
+                      <div class="weather-content__temp"></div>
+                    </div>
+                    <div class="component__forecast-box"></div>
+                  </div>
 
                 
 
@@ -98,5 +106,6 @@
              <!-- Javascript files -->
      <script src="scripts/chamber-menu.js"></script> 
      <script src="scripts/chamber-visits.js" ></script> 
+     <script src="scripts/chamber-weather.js" ></script> 
 </body>
 </html>

@@ -1,65 +1,54 @@
 
-//select HTML elements in the document for 5 day 3 hour forecast
-const myTown = document.querySelector('#town')
-const myGraphic = document.querySelector('#graphic')
-const myDescription = document.querySelector('#description')
-const myTemperature = document.querySelector('#temperature')
+const CURRENT_LOCATION = document.getElementsByClassName('weather-content__overview')[0];
+const CURRENT_TEMP = document.getElementsByClassName('weather-content__temp')[0];
+const FORECAST = document.getElementsByClassName('component__forecast-box')[0];
 
 const townName = "Rigby"
 const myKey = "595ac2cc14ab1d9e32e1f8e790eaf129"
-// const myLat = "43.6751937"
-// const myLon = "-111.918002"
 
-const myURL = `//api.openweathermap.org/data/2.5/weather?q=${townName}&appid=${myKey}&units=imperial`;
+const URL = `https://api.openweathermap.org/data/2.5/forecast?q=${townName}&cnt=7&units=imperial&APPID=${myKey}`;
 
-fetch(myURL)
-    .then((response) => response.json())
-    .then((data) => displayData(data));
+async function getWeatherData() {
+    let headers = new Headers();
+              
+        const data = await fetch(URL, {
+        method: 'GET',
+        headers: headers
+            });
+        return await data.json();
+        } 
+        
+getWeatherData().then(weatherData => {
+    let city = weatherData.city.name;
+    let dailyForecast = weatherData.list;
+            
+    renderData(city, dailyForecast);
+        });
 
-    function displayData(data) {
-        // console.log(data)
-        myTown.innerHTML = data.name
-        myGraphic.src=`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-        myGraphic.alt = data.weather[0].main
-        myDescription.innerHTML = data.weather[0].description
-        myTemperature.innerHTML = `${data.main.temp}&deg;F`
+renderData = (location, forecast) => {
+    const currentWeather = forecast[0].weather[0];
+    const widgetHeader =
+        `<h1>${location}</h1><small>${currentWeather.description}</small>`;
+      
+    CURRENT_TEMP.innerHTML =
+        `<i class="wi ${applyIcon(currentWeather.icon)}"></i>
+        ${Math.round(forecast[0].temp.day)} <i class="wi wi-degrees"></i>`;
+      
+    CURRENT_LOCATION.innerHTML = widgetHeader;
+      
+     // render each daily forecast
+    forecast.forEach(day => {
+        let date = new Date(day.dt * 1000);
+        let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+        let name = days[date.getDay()];
+        let dayBlock = document.createElement("div");
+        dayBlock.className = 'forecast__item';
+        dayBlock.innerHTML =
+            `<div class="forecast-item__heading">${name}</div>
+            <div class="forecast-item__info">
+            <i class="wi ${applyIcon(day.weather[0].icon)}"></i>
+            <span class="degrees">${Math.round(day.temp.day)}
+            <i class="wi wi-degrees"></i></span></div>`;
+        FORECAST.appendChild(dayBlock);
+    });
     }
-
-
-// select HTML elements in the document
-// const currentTemp = document.querySelector('#current-temp');
-// const weatherIcon = document.querySelector('#weather-icon');
-// const captionDesc = document.querySelector('figcaption');
-
-// const townName = "Rigby"
-// const myKey = "595ac2cc14ab1d9e32e1f8e790eaf129"
-// const myLat = "43.6751937"
-// const myLon = "-111.918002"
-
-// const url = `https://api.openweathermap.org/data/2.5/api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&appid=${myKey}unit=imperial`;
-
-// async function apiFetch() {
-//     try {
-//       const response = await fetch(url);
-//       if (response.ok) {
-//         const data = await response.json();
-//         // console.log(data); // testing only
-//         displayData(data); // uncomment when ready
-//       } else {
-//           throw Error(await response.text());
-//       }
-//     } catch (error) {
-//         console.log(error);
-//     }
-//   }
-  
-//   apiFetch();
-
-//   function displayResults(data) {
-//     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-//     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-//     let desc = data.weather[0].description;
-//     // weatherIcon.setAttribute('___', _____);
-//     // weatherIcon.setAttribute('___', _____);
-//     captionDesc.textContent = `${desc}`;
-//   }
