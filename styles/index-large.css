@@ -40,13 +40,19 @@
     }
 
  /* Contact us form */
-    #contact {
+    #bottom{
         display: grid;
         grid-template-columns: 1fr 1fr ;
+        max-width: auto; 
+        margin: 0;
+        gap: 1rem;  
     }
- .form {
-    text-align: left;
- }
-
+    #contact{
+        grid-row: 2 / span 2;
+        text-align: left;
+    }
+    #response{
+        grid-row: 2 / span 2;
+    }
 
 }
