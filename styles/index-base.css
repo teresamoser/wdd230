@@ -325,7 +325,7 @@ input:valid + input::before {
 }
 
 table {
-    width: 460px; 
+    width: 400px; 
     margin: 1rem;
     color: black;;
     padding: 1rem;
