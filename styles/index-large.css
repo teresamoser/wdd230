@@ -18,7 +18,6 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        max-width: auto; 
         margin: 0;
         gap: 1rem;  
     }
@@ -43,7 +42,6 @@
     #bottom{
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        max-width: auto; 
         margin: 0;
         gap: 1rem;  
     }
@@ -53,7 +51,7 @@
     }
     #response{
         grid-row: 2 / span 2;
-        
+
     }
 
 }
