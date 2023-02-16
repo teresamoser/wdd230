@@ -37,11 +37,11 @@
 
         <div class="hero">
             <picture>
-                <source srcset="week03/images/laie_hawaii_temple_lds-small.webp" width="600px">
-                <img src="week03/images/laie_hawaii_temple_lds-large.webp" loading="lazy" width="1000px" alt="hero image">
-                    <a class="herolabel">
+                <source srcset="week03/images/laie_hawaii_temple_lds-small.webp" width="600">
+                <img src="week03/images/laie_hawaii_temple_lds-large.webp" loading="lazy" width="1000" alt="hero image">
+                    <div class="herolabel">
                         <p>Laie Hawaii Temple</p>
-                    </a>
+                    </div>
             </picture>
         </div>
 
@@ -104,7 +104,7 @@
                     <h3>Current Weather</h3>
                     <div class="card">
                         <p id="town"></p>
-                        <img id="graphic" src=" "  alt="image of weather">
+                        <img id="graphic" src="http://openweathermap.org/img/wn/10d@2x.png "  alt="image of weather">
                         <p id="description"></p>
                         <p id="temperature"></p>
                     </div>
@@ -122,7 +122,7 @@
         </div>
 
 <!-- Contact Us Form -->
-<mainbottom id="bottom"> 
+<main id="bottom"> 
     <section id="contact">
         <h2>Contact Us Form</h2>
             <form method="get" oninput="result.value=parseInt(a.value)">
@@ -197,7 +197,7 @@
                     </tbody>
                 </table>
             </section>
-</mainbottom>    
+</main>    
         <footer >
             &copy; <a class="highlight" id="newDate"></a> Teresa Moser <br>
             <a class="highlight" id="lastModified"> </a>
