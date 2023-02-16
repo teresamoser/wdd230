@@ -28,7 +28,8 @@ header img {
   left: 50px;
   }
 
-  /* Menu code below */
+
+/* Menu code below */
 nav  {
   display: none;
   position: absolute;
@@ -143,7 +144,7 @@ main img {
   }
 /* Dark Mode code end */
 
-
+/* Main sections */
 section {
   color: black;;
   padding: 1rem;
@@ -181,7 +182,7 @@ h2 {
 .card1 h2 {
   text-align: center;
   }
-
+/* end Main section */
 
 /* visits per page */
 p {
@@ -298,19 +299,79 @@ input[type="radio"] {
 #formmessage, .msgbtn  {
   grid-column: 1/3;
   }
-  .msgbtn{
+.msgbtn{
    margin-left: 100px;
    background-color:rgb(103, 30, 30);
    color: white;
   }
-
 #keyphrase:invalid {
-  background-color: #ffccbb;
-  animation: shaketext 500ms;
+  background-color: rgb(161, 121, 121);
   }
 input:valid + input::before {
   content: "👍🏼";
   }
+/* end of contact us form */
+
+
+/* Response Table */
+
+:root {
+	--back: rgb(98, 19, 19);
+    --back2: rgb(161, 121, 121);;
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+    margin: 2rem;
+    color: black;;
+    padding: 1rem;
+    border-color:rgb(77, 24, 24);
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 25px;
+    gap: 1.5rem;
+    background:rgb(236, 225, 195);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+	color: var(--back);
+	font-size: 1rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+
+/* End of Table */
 
 footer {
   color:rgb(239, 228, 228);

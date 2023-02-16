@@ -19,3 +19,29 @@ function checkSame() {
 		kp2.style.color = "#000";
 	}
 }
+
+let form=document.getElementById("formSubmission");
+
+let table=document.getElementById('data');
+form.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  submit();
+})
+
+
+const submit=()=>{
+  let name = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+	let user = document.getElementById("keyphrase").value;
+	let message = document.getElementById("comments").value;	
+
+  let newArray = [name, email, phone, user, message];
+  newArray.forEach((item)=>{
+      var tr = document.createElement("td");
+  var text = document.createTextNode(item);
+  tr.appendChild(text);
+  table.appendChild(td);
+  })
+  form.reset(); 
+}
