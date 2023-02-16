@@ -27,6 +27,7 @@
     .card1 {
         grid-row: 2 / span 2;
         text-align: left;
+
     } 
     .card1 h2{
         text-align: center;
@@ -39,6 +40,7 @@
     }
 
  /* Contact us form */
+
     #bottom{
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -52,6 +54,9 @@
     #response{
         grid-row: 2 / span 2;
 
+    }
+    table {
+        width: 500px;
     }
 
 }
