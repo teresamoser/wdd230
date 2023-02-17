@@ -1,33 +1,33 @@
 
 @media only screen and (min-width: 760px){
  
-    header {
-        width: 100%;
-        grid-column: 1 / 4;
-        height: 20 rem;
+header {
+    width: 100%;
+    grid-column: 1 / 4;
+    height: 20 rem;
     } 
-    header img {
-        width:fit-content;
-        position: center;
-        display: flex;
-        margin: auto;
-        border: none;
+header img {
+    width:fit-content;
+    position: center;
+    display: flex;
+    margin: auto;
+    border: none;
     }  
-    header button{
-        display: none;
+header button{
+    display: none;
     }
-    main h1{
-        grid-column: 1 / span 2;
+main h1{
+    grid-column: 1 / span 2;
+    }    
+nav {
+    min-width: 1500px;
+    top: 0px;
+    font-size: larger;
+    display: block;
     }
-    nav {
-        min-width: 1500px;
-        top: 0px;
-        font-size: larger;
-        display: block;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: row-reverse;
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
     }
 
 /* Sections Chamber Home page css */
@@ -67,36 +67,39 @@
         grid-template-columns: 1 / span 2 ;
         grid-row: 3;
         text-align: center; 
-        } 
+        }
+/*End Home page  */
   
          
 /* Discover page css */
-    .main-content {
-        flex: 3;
-        margin-left: 400px;
-        min-width: 400px;
-        }
-    h2 {
-        text-align: center;
-        }
-    .main-content img:hover {
-        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 16px 44px 0 rgba(0, 0, 0, 0.19);
-        border-color:rgb(85, 2, 2) ;
-        border-width: 10px;
-        }
-    .left-sidebar {
-        flex: 1;
-        text-align: justify;
-        padding: 10px;
-        width: 400px;
-        height: auto;
-        position: absolute;
-        top: 41rem;
-        }
+.main-content {
+    flex: 3;
+    margin-left: 400px;
+    min-width: 400px;
+    }
+h2 {
+    text-align: center;
+    }
+.main-content img:hover {
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 16px 44px 0 rgba(0, 0, 0, 0.19);
+    border-color:rgb(85, 2, 2) ;
+    border-width: 10px;
+    }
+.left-sidebar {
+    flex: 1;
+    text-align: justify;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 41rem;
+    }
+
+    
+/* End Discover page */
+
 
 /* Directory page css */
-
-
     #directory button {
         display: grid;
         padding: 5px;
@@ -108,12 +111,13 @@
         grid-gap: .5rem;
         grid-template-columns: auto auto auto;
         padding: 1rem; 
-        
+        width: 100%;
+        }
+    article.grid {
+        width: 100%;
         }
     article.list{
         display: flex;
-        width: 100%;
-        
-
+        flex-direction: column;
         }
 }   
