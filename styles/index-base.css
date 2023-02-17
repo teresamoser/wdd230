@@ -314,6 +314,9 @@ input:valid + input::before {
 
 
 /* Response Table */
+#response h2 {
+  text-align: center;
+}
 
 :root {
 	--back: rgb(98, 19, 19);
