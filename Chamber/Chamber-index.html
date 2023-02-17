@@ -19,9 +19,9 @@
      <link rel="icon" href="">
 
     <!-- Style sheet links -->
-     <link rel="stylesheet" href="Styles/Chamber-base.css">
-     <link rel="stylesheet" href="Styles/chamber-large.css">
-     <link rel="stylesheet" href="Styles/chamber-weather.css">
+     <link rel="stylesheet" href="styles/chamber-base.css">
+     <link rel="stylesheet" href="styles/chamber-large.css">
+     <link rel="stylesheet" href="styles/chamber-weather.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap">
 </head>
 <body>
@@ -47,14 +47,14 @@
                 </nav>
                 <p><img src="images/main-street-rigby.webp" loading="lazy" width="600" height="400" alt="Quality Store"/><br>
                      <a href="join.html" class="join-button">Join the Chamber</a><br>
-                </p>
-            
+                </p>  
         </header>
 
             <section class="comm-info">
                 <h3>Community Information</h3>
                 <img src="images/FestivalOfTrees.png" loading="lazy" width="300" height="200" alt="Festival of Trees"/>
             </section>
+
             <section class="weather">
                 <h3>Weather</h3>
                 <!-- weather widget start -->
@@ -62,33 +62,32 @@
                         <img src="https://w.bookcdn.com/weather/picture/32_39566_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=32094&domid=w209&anc_id=14086"  alt="booked.net"/>
                     </a> -->
                 <!-- weather widget end -->
-                <div class="component__weather-box">
-                    <div class="component__weather-content">
-                      <div class="weather-content__overview"></div>
-                      <div class="weather-content__temp"></div>
-                    </div>
-                    <div class="component__forecast-box"></div>
-                  </div>
-
-                
-
+                <h3>Current Weather</h3>
+                <div class="card">
+                    <p id="town"></p>
+                    <img id="graphic" src="http://openweathermap.org/img/wn/10d@2x.png" alt="image of weather">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
             </section>
+
             <section class="bus-spot1">
                 <h3>Business Spotlights</h3>
                 <img src="images/Broulims.webp" loading="lazy" width="200" height="150" alt="Broulim's"/><br>
                 <p>Food Drive at Broulim's this weekend.</p>
             </section>
+
             <section class="bus-spot2">
                 <h3>Business Spotlights</h3>
                 <img src="images/FamilyDollarmed.webp" loading="lazy" width="200" height="150" alt="Family Dollar"/><br>
                 <p>Welcome to the new Family Dollar store in Rigby!!</p>
             </section>
+
             <section class="bus-spot3">
                 <h3>Business Spotlights</h3>
                 <img src="images/GardenGateNursery.jpeg" loading="lazy" width="200" height="150" alt="Family Dollar"/><br>
                 <p>Garden Gate Nursery is celebrating 10 years in business!</p>
             </section>
-
     </main>
         <footer>
             <p> &copy;
@@ -96,6 +95,7 @@
                 Rigby Chamber Of Commerce<br>
                 Teresa Moser  WDD 230 Project 
             </p>
+
             <p class="highlight" id="lastModified">
                 <script>
                 const date = new Date(document.lastModified);
@@ -103,6 +103,7 @@
                 </script>
             </p>
         </footer> 
+
              <!-- Javascript files -->
      <script src="scripts/chamber-menu.js"></script> 
      <script src="scripts/chamber-visits.js" ></script> 
