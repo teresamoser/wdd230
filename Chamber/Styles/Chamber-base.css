@@ -95,6 +95,8 @@
     content: " ❌ ";
   }
 /*end of menu*/
+
+
   main {
       display: grid;
       grid-column: 1 / 3 ;
@@ -116,6 +118,21 @@
       background-color:#a9927d ;
       gap: 1.5rem;
     }
+    
+  #graphic {
+    border-color:rgb(77, 24, 24);
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 25px;
+  }
+  .comm-info img, .bus-spot1 img, .bus-spot2 img, .bus-spot3 img {
+    border-color:rgb(77, 24, 24);
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 25px;
+ } 
 
   /* Discover page css */
 
@@ -130,9 +147,11 @@
     width: 100%;
     height: auto;
     }
+  
   p {
     font-size: large;
     }
+
   .left-sidebar {
     float: left;
     background-color:#847678;;
@@ -221,9 +240,6 @@ article.list {
 	font-size: 1rem;
 	font-family: Tahoma, Helvetica, sans-serif;
 }
-/* .list section:nth-child(even) {
-	background-color: #bed;
-} */
 
 /* Directory page end */
 
