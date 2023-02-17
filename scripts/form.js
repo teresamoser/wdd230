@@ -38,10 +38,10 @@ const submit=()=>{
 
   let newArray = [name, email, phone, user, message];
   newArray.forEach((item)=>{
-      var tr = document.createElement("td");
+      var ul = document.createElement("li");
   var text = document.createTextNode(item);
-  tr.appendChild(text);
-  table.appendChild(td);
+  li.appendChild(text);
+  table.appendChild(ul);
   })
   form.reset(); 
 }
