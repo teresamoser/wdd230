@@ -14,7 +14,7 @@ h1 {
   }
 header {
   display: grid;
-  grid-template-columns: auto 48px;
+  grid-template-columns: auto 52px;
   color:rgb(239, 228, 228);
   background: rgb(77, 24, 24);
   height: 20rem;
@@ -75,7 +75,7 @@ nav.open {
   width: 48px;
   font-size: 2rem;
   background-color: rgb(161, 121, 121);
-  padding: 30px;
+  margin-top: 5px;
   }
 #hamburger::before {
   content: " ≡ ";
