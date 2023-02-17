@@ -75,6 +75,7 @@ nav.open {
   width: 48px;
   font-size: 2rem;
   background-color: rgb(161, 121, 121);
+  padding: 30px;
   }
 #hamburger::before {
   content: " ≡ ";
