@@ -98,12 +98,7 @@ h2 {
 
 
 /* Directory page css */
-    #directory button {
-        display: grid;
-        padding: 5px;
-        font-weight: 700;
-        font-size: medium;
-        }
+
     .grid #cards {
         display: grid;
         grid-gap: .5rem;

@@ -239,12 +239,15 @@ p {
     width: fit-content;
     }
 #directory button {
+    width: 100px;
+    height: 100px;
     padding: 10px;
     font-weight: 700;
-    font-size: medium; 
+    font-size: 30px;
+
     }
 #directory button:hover , #directory button:focus {
-    background-color: rgb(136, 113, 113);
+    background-color: rgb(174, 120, 120);
     cursor: pointer;
     }
 .grid section {
