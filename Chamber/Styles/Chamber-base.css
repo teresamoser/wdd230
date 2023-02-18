@@ -47,7 +47,7 @@ header img{
     width: 250px;
     height: 50px;
     cursor: pointer;
-    background-color:#a9927d;
+    background-color:rgb(236, 225, 195);
     color:black;
     }
 
@@ -86,7 +86,7 @@ nav a {
     text-decoration: none;
     color:black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    transition: vertical 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     background-color:#a9927d ;
     } 
 nav.open {
@@ -145,6 +145,17 @@ main section {
 
 
 /* Discover page css */
+.main-content h2{
+    font-family: Tahoma,Verdana, Geneva, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-color: #5a0b0b;
+    background-color:rgb(236, 225, 195);
+    border-style: solid;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 25px;
+}
 .main-content img{
     display: flex;
     border-color:rgb(236, 225, 195);
@@ -159,6 +170,9 @@ main section {
 p {
     font-size: large;
     }
+.left-sidebar h2 {
+    
+}
 .left-sidebar img {
     border-color:rgb(236, 225, 195);
     border-style: solid;
@@ -222,7 +236,6 @@ p {
     }
 .grid section {
     max-width: 460px;
-    flex-direction: auto;
     text-align: center;
     }
 .grid section > * {
@@ -273,7 +286,7 @@ article.list {
     font-family: Tahoma,Verdana, Geneva, sans-serif;
     font-size: 30px;
     text-align: center;
-    border-color:r#5a0b0b;
+    border-color: #5a0b0b;
     background-color:rgb(236, 225, 195);
     border-style: solid;
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -340,10 +353,15 @@ form label.top input:required:valid {
 
 /* Discover visits per page */
 .counter {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 10px;
-	width: 100%;
-	background-color: rgba(230, 220, 202, 0.3);
+    font-family: Tahoma,Verdana, Geneva, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-color: #5a0b0b;
+    background-color:rgb(236, 225, 195);
+    border-style: solid;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 25px;
     }
 p {
     margin: 1rem;
