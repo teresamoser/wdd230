@@ -9,6 +9,9 @@ body {
     display: block; 
     padding: 10px;
     }
+header h1 {
+    margin-top: 40px;
+    }
 header {
     display: grid;
     padding: .5rem;
@@ -229,13 +232,13 @@ p {
     font-family: Tahoma, cursive;
     }
 article.grid {
-  display: flex;
-  flex-direction: column;
-  text-align: center; 
-  margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
-}
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    }
 article.list {
     display: flex;
     width: 100%;
@@ -268,14 +271,21 @@ article.list {
 /*  --FORM-- */
 #join h1{
     font-family: Tahoma,Verdana, Geneva, sans-serif;
-    font-size:25px;
+    font-size: 30px;
+    text-align: center;
+    border-color:r#5a0b0b;
+    background-color:rgb(236, 225, 195);
+    border-style: solid;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 25px;
     }
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #070707f0;
     border-radius: 10px;
     padding: .5rem 2%;
-    background-color: antiquewhite;
+    background-color:rgb(236, 225, 195);
     text-align: left;
     }
 form legend{
@@ -288,7 +298,7 @@ form legend{
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: black;
     font-size: medium;    
     }
 form label.top input, form label.top select {
@@ -324,9 +334,6 @@ form label.top input:required  {
 form label.top input:required:valid {
     border-left: green solid 6px;
     }
-#join{
-    background-color:#847678;
-}
 
 /* Form and join page end */
 
