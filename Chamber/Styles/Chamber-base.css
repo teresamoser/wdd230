@@ -269,7 +269,7 @@ article.list {
 
 /* Join page css */
 /*  --FORM-- */
-#join h1{
+#join h2{
     font-family: Tahoma,Verdana, Geneva, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -340,31 +340,31 @@ form label.top input:required:valid {
 
 /* Discover visits per page */
 .counter {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 10px;
 	width: 100%;
 	background-color: rgba(230, 220, 202, 0.3);
-}
+    }
 p {
-  margin: 1rem;
-  }
+    margin: 1rem;
+    }
 .label {
-  font-family: Tahoma, Verdana, sans-serif;
-  font-weight: 700;
-  }
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: 700;
+    }
 .visits {
-  color: rgb(90, 7, 7);
-  font-weight: bolder;
-  font-size: larger;
-  }
+    color: rgb(90, 7, 7);
+    font-weight: bolder;
+    font-size: larger;
+    }
 /* Discover page ends  */
 
 
-  footer {
+footer {
     background: #5E503F;
     color: #f2f4f3;
     padding: 2rem;
     text-align: center;
     grid-column: 1/3 ;
-  }
+    }
   
