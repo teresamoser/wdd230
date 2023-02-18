@@ -19,7 +19,6 @@
     <!-- Favicon -->
     <link rel="icon" href="images/communityIcon.jpeg">
 
-
     <!--Style sheet links-->
      <link rel="stylesheet" href="styles/chamber-base.css">
      <link rel="stylesheet" href="styles/chamber-large.css">
@@ -67,20 +66,32 @@
                     <label class="top"> Business Name* <input type="text" name="busname" required></label>
                     <label class="top"> Website <input type="url" name="url" placeholder="http://" required></label>
                 </fieldset>
-                <fieldset>
+                <fieldset id="membership">
                     <legend>Membership Level</legend>
-                    <div>Level</div>
-                    <label class="sbs"><input type="radio" name="audience" value="npmember"> NP Membership is for non-profit organizations and there is no fee.</label>
-                    <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership </label>
-                    <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
-
-                    <div>Business Licensing</div>
-                    <label class="sbs"><input type="checkbox" name="franchise" value="yes"> Franchise</label>
-                    <label class="sbs"><input type="checkbox" name="startup" value="yes"> Start-Up</label>
-                    <label class="sbs"><input type="checkbox" name="web" value="yes"> Web Master</label>
-                    <label class="sbs"><input type="checkbox" name="train" value="yes"> In-Training</label>
-
+                    <div id="level">Level
+                        <label class="sbs"><input type="radio" name="audience" value="npmember"> NP (Non-Profit Organizations)</label>
+                        <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership </label>
+                        <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
+                    </div>
+                    <div id="benefits">Membership Benefits
+                        <h4>NP (Non-Profit Organizations)</h4>
+                        <p>
+                            There is no fee for this memebership. You can place announcements on our website, but there will be no business spotlights.
+                        </p>
+                        <h4>Bronze Membership</h4>
+                        <p>
+                            Fee is $35.00 per month. This will give you one spotlight every 6 months. Monthly luncheon invitations.  
+                        </p>
+                        <h4>Silver Membership</h4>
+                        <p>
+                            Fee is $70.00 per month. This will give you one spotlight every other month. Monthly luncheon invitations. Chamber privileges and voting rights. 
+                        </p>
+                        <h4>Gold Membership</h4>
+                        <p>
+                            Fee is $150.00 per month. This will give you one spotlight per month. Monthly luncheon invitations. Chamber privileges, voting, seat on the board, and your votes are worth two votes,
+                        </p>
+                    </div>
                 </fieldset>
 
                 <fieldset>
