@@ -171,7 +171,15 @@ p {
     font-size: large;
     }
 .left-sidebar h2 {
-    
+    font-family: Tahoma,Verdana, Geneva, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-color: #5a0b0b;
+    background-color:rgb(236, 225, 195);
+    border-style: solid;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 25px;
 }
 .left-sidebar img {
     border-color:rgb(236, 225, 195);
