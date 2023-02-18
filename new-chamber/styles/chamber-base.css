@@ -145,7 +145,7 @@ main section {
 
 
 /* Discover page css */
-.main-content h2{
+.content h2{
     font-family: Tahoma,Verdana, Geneva, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -156,7 +156,7 @@ main section {
     padding: 10px;
     border-radius: 25px;
 }
-.main-content img{
+.content img{
     display: flex;
     border-color:rgb(236, 225, 195);
     border-style: solid;
