@@ -1,4 +1,4 @@
-const url = "data/members.json"
+const url = "data/members.json";
 const cards = document.querySelector('#cards');
 
 async function getDirectoryData() {
@@ -6,7 +6,7 @@ async function getDirectoryData() {
   const data = await response.json();
   console.table(data.members);
   displayDirectory(data.members);
-  }
+  };
 
 getDirectoryData();
 
@@ -58,4 +58,4 @@ const displayDirectory = (members) => {
       display.classList.add("list");
       display.classList.remove("grid");
     }
-}
+  }
